@@ -8,6 +8,8 @@
     --color-black: #000000;
     --color-lightblack: #374957;
     --color-bg: #C5C5C5;
+    --gradient-blue1: #262770;
+    --gradient-blue2: #232460;
 }
 @font-face {
     font-family: "Montserrat";
@@ -86,6 +88,11 @@ body {
     .header_main .navbar-nav,
     .header_right {
         gap: 0.5rem;
+    }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .header_right form.d-flex {
+        display: none !important;
     }
 }
 @media (max-width: 991px) {
@@ -381,22 +388,22 @@ body {
 .slick_banner_slides .slide_right_block.slide_block {
     padding: 30px;
 }
-.slide_right_block .banner_subheading {
+.banner_subheading {
     font-size: 18px;
     font-weight: 600;
     margin: 0;
 }
-.slide_right_block .banner_heading {
+.banner_heading {
     font-size: 44px;
     font-weight: 500;
     margin: 20px 0 30px;
     font-family: "Montserrat-SemiBold";
     max-width: 560px;
 }
-.slide_right_block .banner_heading span {
+.banner_heading span {
     color: var(--primary-orange);
 }
-.slide_right_block .banner_text {
+.banner_text {
     font-family: 'Poppins';
     margin-bottom: 30px;
     max-width: 420px;
@@ -830,7 +837,7 @@ body {
 
 /* Question section */
 .question_block_bg {
-    background: linear-gradient(90deg, #262770 0%, #232460 100%);
+    background: linear-gradient(90deg, var(--gradient-blue1) 0%, var(--gradient-blue2) 100%);
     border-radius: 8px;
     color: var(--color-white);
     position: relative;

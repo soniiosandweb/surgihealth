@@ -1,6 +1,213 @@
+.btn-orange {
+    background-color: var(--primary-orange);
+    font-size: 18px;
+    border: 1px solid var(--primary-orange);
+    color: var(--color-white);
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-family: "Montserrat-Bold";
+}
+.btn-orange:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+/* header */
+.header_new_design .navbar-nav {
+    gap: 5px;
+}
+.header_new_design .navbar-nav .nav-item .nav-link {
+    padding: 8px 5px;
+}
+.header_new_design .navbar-brand {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header_new_design .new_header_div {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 40% 1fr 40%;
+    align-items: center;
+    width: 100%;
+}
+.header_new_design .new_header_div .header_right {
+    justify-content: end;
+    gap: 10px;
+}
+.header_new_design .new_header_div .header_right .btn-header-cart {
+    border: none;
+    padding: 6px;
+}
+.header_new_design .new_header_div .header_right .btn-login {
+    margin-left: 8px;
+}
+@media (max-width: 1300px) {
+    .header_main.header_new_design {
+        padding: 15px 0;
+    }
+}
+@media (max-width: 1199px) {
+    .header_new_design .new_header_div .navbar-toggler {
+        width: max-content;
+    }
+}
+/* Banner section new */
+.banner_new_section {
+    background: linear-gradient(90deg, var(--gradient-blue1) 0%, var(--gradient-blue2) 100%);
+    color: var(--color-white);
+}
+.banner_new_section .new_banner_content {
+    min-height: 500px;
+    padding: 180px 0 120px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    max-width: 1111px;
+    margin: auto;
+}
+.banner_new_section .new_banner_content .banner_heading,
+.banner_new_section .new_banner_content .banner_text {
+    max-width: 100%;
+}
+.banner_btn_links {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 15px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.banner_btn_links .banner_btn_link {
+    text-decoration: unset;
+    border-radius: 8px;
+    padding: 11px 16px;
+    background-color: #FFFFFF1A;
+    color: var(--color-white);
+    font-family: 'Poppins';
+}
+.banner_btn_links .banner_btn_link:hover {
+    background-color: var(--primary-orange);
+}
+.banner_search_form .search_input {
+    padding: 20px 180px 20px 20px;
+    box-shadow: unset;
+    height: 66px;
+}
+.banner_search_form .search_input::placeholder {
+    color: var(--color-bg);
+}
+.banner_search_form .search_input:focus {
+    border-color: var(--primary-orange);
+}
+.banner_search_form .btn-submit {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 30px;
+    top: 6px;
+    bottom: 6px;
+    height: max-content;
+    margin: auto;
+    right: 8px;
+}
+.banner_search_form .btn-submit i {
+    line-height: 1;
+}
+.banner_search_form .btn-submit:hover {
+    background: var(--primary-blue);
+    color: var(--color-white);
+}
+@media (max-width: 575px) {
+    .banner_search_form {
+        flex-direction: column;
+    }
+    .banner_search_form .btn-submit {
+        position: relative;
+    }
+    .banner_search_form .search_input {
+        padding: 15px;
+        height: auto;
+    }
+}
+/* Book Now section */
+.book_now_section {
+    background: linear-gradient(90deg, var(--gradient-blue1) 0%, var(--gradient-blue2) 100%);
+    color: var(--color-white);
+}
+.book_now_flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.book_now_flex .book_now_text {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex: 1;
+}
+.book_now_flex .book_now_text i {
+    font-size: 56px;
+    line-height: 1;
+}
+.book_now_flex .book_now_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.book_now_flex .book_now_content h5 {
+    font-size: 24px;
+    font-family: 'Montserrat-SemiBold';
+    margin: 0;
+}
+.paragraph {
+    font-family: 'Poppins';
+    margin: 0;
+}
+.btn-orange.book_now_btn:hover {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+}
+@media (max-width: 767px) {
+    .book_now_flex {
+        flex-direction: column;
+    }
+}
+@media (max-width: 575px) {
+    .book_now_flex .book_now_text {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 /* News Section */
 .latest_news_slider_new {
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(3, 1fr);
+}
+.categories_top.new_style {
+    justify-content: center;
+}
+.center_btn_block {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0;
+}
+@media (max-width: 1199px) {
+    .latest_news_slider_new {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .latest_news_slider_new {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

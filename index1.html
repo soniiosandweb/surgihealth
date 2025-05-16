@@ -16,62 +16,61 @@
 <body>
 
     <!-- header -->
-    <header class="header_main">
-        <nav class="navbar navbar-expand-xl">
+    <header class="header_main header_new_design">
+        <nav class="navbar navbar-expand-xl p-0">
             <div class="container-xxl">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="assests/images/logo.png" alt="Logo" class="logo_main" />
-                </a>
-                <button class="navbar-toggler" type="button" id="mobiletoggle">
-                    <i class="fi-rr-bars-staggered"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="mainnavbar">
-                    <div class="mobile_toggle">
-                        <button class="navbar-toggler" type="button" id="mobiletoggle_close">
-                            <i class="fi-rr-cross"></i>
-                        </button>
+                <div class="new_header_div">
+                    <button class="navbar-toggler" type="button" id="mobiletoggle">
+                        <i class="fi-rr-bars-staggered"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainnavbar">
+                        <div class="mobile_toggle">
+                            <button class="navbar-toggler" type="button" id="mobiletoggle_close">
+                                <i class="fi-rr-cross"></i>
+                            </button>
+                        </div>
+                        
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Instrument Cleaning</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrument Identification</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrument Protection</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Resources </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Instrument Cleaning</a></li>
-                                <li><a class="dropdown-item" href="#">Instrument Identification</a></li>
-                                <li><a class="dropdown-item" href="#">Instrument Protection</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Resources </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Contact</a>
-                        </li>
-                    </ul>
+
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="assests/images/logo.png" alt="Logo" class="logo_main" />
+                    </a>
 
                     <div class="d-flex header_right">
-                        <form class="d-flex relative">
-                            <button type="submit" class="btn-submit">
-                                <i class="fi-rr-search"></i>
-                            </button>
-                            <input class="form-control search_input" type="text" placeholder="Search" name="search_input">
-                        </form>
+                        <button type="submit" class="btn-search btn-header-cart">
+                            <i class="fi-rr-search"></i>
+                        </button>
                         <button type="button" class="btn-header-cart">
                             <i class="fi-rr-shopping-cart"></i>
                             <span class="cart_amount">4</span>
                         </button>
                         <button type="button" class="btn-login"><i class="fi fi-rr-user"></i> Login</button>
                     </div>
-
                 </div>
 
             </div>
@@ -79,63 +78,36 @@
     </header>
 
     <!-- banner -->
-    <section class="banner_section">
-        <div class="container-xxl">
+    <section class="banner_new_section">
+        <div class="container-lg">
             <div class="row">
                 <div class="col">
-                    <div class="banner_slick_slider">
-                        <div class="slick_banner_slides">
-                            <div class="banner_slide">
-                                <div class="slide_left_block slide_block">
-                                    <img src="assests/images/portrait-confident-male-surgeon.png" alt="surgeon" class="banner-image" />
-                                    <span class="float_btn left_side">
-                                        Bouffant Caps
-                                        <span class="line_dot"></span>
-                                    </span>
-                                    <span class="float_btn right_top">
-                                        Beard Covers
-                                        <span class="line_dot"></span>
-                                    </span>
-                                    <span class="float_btn right_bottom">
-                                        Protective Sleeves
-                                        <span class="line_dot"></span>
-                                    </span>
-                                </div>
-                                <div class="slide_right_block slide_block">
-                                    <h6 class="banner_subheading">-Surgihealth's Provide </h6>
-                                    <h1 class="banner_heading">Revolutionising Sterile Processing with <span>Innovative Solutions</span></h1>
-                                    <p class="banner_text">Enhance Safety, Efficiency, and Accuracy in Your Facility with SurgiHealth's Premium Products</p>
-                                    <a href="#" class="btn-gradient banner_btn">Get Started Now!</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="new_banner_content">
+                        <h6 class="banner_subheading">Surgihealth's Provide </h6>
+                        <h1 class="banner_heading"><span class="gradient_text">The tools you need to get the job done.</span></h1>
+                        <p class="banner_text">Explore a vast selection of high-quality sterile processing and endoscopy supplies.</p>
 
-                        <div class="slick_banner_slides">
-                            <div class="banner_slide">
-                                <div class="slide_left_block slide_block">
-                                     <img src="assests/images/portrait-confident-male-surgeon.png" alt="surgeon" class="banner-image" />
-                                    <span class="float_btn left_side">
-                                        Bouffant Caps
-                                        <span class="line_dot"></span>
-                                    </span>
-                                    <span class="float_btn right_top">
-                                        Beard Covers
-                                        <span class="line_dot"></span>
-                                    </span>
-                                    <span class="float_btn right_bottom">
-                                        Protective Sleeves
-                                        <span class="line_dot"></span>
-                                    </span>
-                                </div>
-                                <div class="slide_right_block slide_block">
-                                    <h6 class="banner_subheading">-Surgihealth's Provide </h6>
-                                    <h1 class="banner_heading">Revolutionising Sterile Processing with <span>Innovative Solutions</span></h1>
-                                    <p class="banner_text">Enhance Safety, Efficiency, and Accuracy in Your Facility with SurgiHealth's Premium Products</p>
-                                    <a href="#" class="btn-gradient banner_btn">Get Started Now!</a>
-                                </div>
-                            </div>
+                        <form class="d-flex relative banner_search_form" method="post">
+                            <input class="form-control search_input" type="text" placeholder="Enter product name, number, keyword, or competitor product number to find your match..." name="search_input">
+                            <button type="submit" class="btn-submit btn-gradient">
+                                <i class="fi-rr-search"></i> Search
+                            </button>
+                        </form>
+
+                        <div class="banner_btn_links">
+                            <a href="#" class="banner_btn_link">
+                                <span class="banner_btn_link_text">Instrument Cleaning</span>
+                            </a>
+                            <a href="#" class="banner_btn_link">
+                                <span class="banner_btn_link_text">Instrument Identification</span>
+                            </a>
+                            <a href="#" class="banner_btn_link">
+                                <span class="banner_btn_link_text">Instrument Protection</span>
+                            </a>
+                            <a href="#" class="banner_btn_link">
+                                <span class="banner_btn_link_text">Trays + Accessories</span>
+                            </a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -143,14 +115,13 @@
     </section>
 
     <!-- Product Categories -->
-    <section class="product_categories section-padding">
+    <section class="product_categories section-padding section-top-padding">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
-                    <div class="categories_top">
+                    <div class="categories_top new_style">
                         <div class="categories_left">
-                            <p class="subheading">Our Best</p>
-                            <h3 class="main_heading">Product Categories</h3>
+                            <h3 class="main_heading">Choose from our best categories</h3>
                         </div>
                     </div>
 
@@ -267,7 +238,7 @@
     </div>
 
     <!-- Our Top Products section -->
-    <section class="top_products_section section-padding section-top-padding">
+    <section class="top_products_section section-padding section-top-padding section-bottom-padding">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
@@ -625,12 +596,34 @@
         </div>
     </section>
 
+    <!-- Book Now section -->
+    <section class="book_now_section section-padding">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col">
+                    <div class="book_now_flex">
+                        <div class="book_now_text">
+                            <i class="fi-rr-phone-call"></i>
+                            <div class="book_now_content">
+                                <h5 class="gradient_text">Book your products sample now</h5>
+                                <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="book_now_btn">
+                            <button class="btn-orange book_now_btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Latest News section -->
-    <section class="latest_news_section section-padding section-bottom-padding">
+    <section class="latest_news_section section-padding section-bottom-padding section-top-padding">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
-                    <div class="categories_top">
+                    <div class="categories_top new_style">
                         <div class="categories_left">
                             <h3 class="main_heading">Our Latest Blogs</h3>
                         </div>
@@ -677,6 +670,11 @@
                         </div>
 
                     </div>
+
+                    <div class="center_btn_block">
+                        <button class="btn-orange view_all_btn">View All Blogs</button>
+                    </div>
+
                 </div>
             </div>
         </div>
