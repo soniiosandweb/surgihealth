@@ -1,0 +1,6 @@
+/* News Section */
+.latest_news_slider_new {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
