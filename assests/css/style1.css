@@ -93,8 +93,21 @@
 }
 /* Banner section new */
 .banner_new_section {
-    background: linear-gradient(90deg, var(--gradient-blue1) 0%, var(--gradient-blue2) 100%);
+    background-image: url('../images/instruments-dental.png');
     color: var(--color-white);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner_new_section:after {
+    content: "";
+    background: linear-gradient(90deg, var(--gradient-blue1) 0%, var(--gradient-blue2) 100%);
+    opacity: 90%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 .banner_new_section .new_banner_content {
     min-height: 500px;
