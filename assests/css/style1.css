@@ -229,6 +229,7 @@
 .btn-orange.book_now_btn:hover {
     background-color: var(--color-white);
     border-color: var(--color-white);
+    color: var(--primary-orange);
 }
 @media (max-width: 767px) {
     .book_now_flex {
