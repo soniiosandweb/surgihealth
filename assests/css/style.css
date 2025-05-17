@@ -173,6 +173,9 @@ body {
     padding: 10px 30px;
     font-family: "Montserrat-Bold";
 }
+.header_right .btn-login i {
+    line-height: 1;
+}
 .header_right .btn-login:hover {
     background-color: transparent;
     border-color: var(--color-white);
@@ -193,6 +196,7 @@ body {
     right: 0;
     padding: 20px;
     background-color: var(--color-white);
+    z-index: 1111;
 }
 #mainnavbar.collapse.show  .nav-item .nav-link{
     color: var(--color-blue);
@@ -583,7 +587,7 @@ body {
     .slick_banner_slides .slide_right_block.slide_block {
         padding: 30px 0px 50px;
     }
-    .slide_right_block .banner_heading {
+    .banner_heading {
         font-size: 34px;
     }
     .slide_left_block.slide_block .float_btn {

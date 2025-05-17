@@ -26,7 +26,7 @@
 }
 .header_new_design .new_header_div {
     display: grid;
-    gap: 10px;
+    gap: 0;
     grid-template-columns: 40% 1fr 40%;
     align-items: center;
     width: 100%;
@@ -42,6 +42,10 @@
 .header_new_design .new_header_div .header_right .btn-login {
     margin-left: 8px;
 }
+.header_new_design #mainnavbar.collapse.show {
+    left: 0;
+    right: auto;
+}
 @media (max-width: 1300px) {
     .header_main.header_new_design {
         padding: 15px 0;
@@ -50,6 +54,41 @@
 @media (max-width: 1199px) {
     .header_new_design .new_header_div .navbar-toggler {
         width: max-content;
+    }
+}
+@media (max-width: 1023px) {
+    .header_new_design .new_header_div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .header_new_design .new_header_div .header_right .btn-login {
+        padding: 0 10px 0 5px;
+        margin: 0;
+        background-color: transparent;
+        border-color: transparent;
+        font-size: 24px;
+    }
+    .header_new_design .new_header_div .header_right .btn-login span {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .header_new_design .navbar-brand .logo_main {
+        max-width: 150px;
+    }
+    .header_new_design .new_header_div .header_right {
+        padding: 0;
+        gap: 5px;
+    }
+}
+@media (max-width: 575px) {
+    .header_new_design .navbar-brand .logo_main {
+        max-width: 100px;
+    }
+    .header_new_design .new_header_div .header_right {
+        gap: 2px;
+    }
+    .header_new_design .new_header_div .header_right i {
+        font-size: 20px;
     }
 }
 /* Banner section new */
@@ -133,6 +172,9 @@
     .banner_search_form .search_input {
         padding: 15px;
         height: auto;
+    }
+    .banner_new_section .new_banner_content {
+        padding: 120px 0 100px;
     }
 }
 /* Book Now section */
