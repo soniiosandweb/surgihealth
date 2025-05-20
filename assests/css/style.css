@@ -12,6 +12,8 @@
     --gradient-blue2: #232460;
     --primary-green: #116757;
     --color-lightwhite: #F8F8F8;
+    --breadcrumb-bg: #E7EEF2;
+    --color-gray: #E9E9E9;
 }
 @font-face {
     font-family: "Montserrat";
@@ -63,6 +65,9 @@ body {
 .color-gray{
     color: var(--color-bg);
 }
+.breadcrum-bg {
+    background-color: var(--breadcrumb-bg);
+}
 @media (max-width: 991px) {
     .section-padding {
         padding: 40px 0;
@@ -93,6 +98,9 @@ body {
 }
 .header_main .navbar {
     z-index: 11;
+}
+.header_main .navbar-brand {
+    padding: 0;
 }
 .header_main .navbar-nav .nav-item .nav-link {
     color: var(--color-white);
@@ -125,6 +133,9 @@ body {
 @media (max-width: 991px) {
     .header_main {
         padding: 0px;
+    }
+    .header_main .navbar-brand .logo_main {
+        max-width: 150px;
     }
 }
 
@@ -386,6 +397,12 @@ body {
         justify-content: center;
         margin-top: 15px;
     }
+    .footer_col {
+        text-align: center;
+    }
+    .main_footer .footer_social {
+        justify-content: center;
+    }
 }
 
 /* banner */
@@ -567,7 +584,7 @@ body {
 }
 @media (max-width: 1199px){
     .slick_banner_slides .banner_slide {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .banner_slick_slider.slick-slider.slick-dotted .slick-dots {
         right: auto;
@@ -695,11 +712,11 @@ body {
 }
 @media (max-width: 1199px) {
     .categories_right_tab .nav.nav-pills {
-        justify-content: start;
+        justify-content: center;
     }
     .categories_top {
+        text-align: center;
         flex-direction: column;
-        align-items: start;
     }
 }
 .categories_product_flex {
@@ -721,14 +738,25 @@ body {
     font-family: 'Montserrat-SemiBold';
     color: var(--color-blue);
 }
+.product_block:hover .product_title {
+    color: var(--primary-orange);
+}
 .product_block .product_text {
     color: var(--color-bg);
     text-transform: uppercase;
     font-weight: 500;
 }
+.product_block .product_img_link {
+    display: block;
+    overflow: hidden;
+}
 .product_block .product_img {
     width: 100%;
     object-fit: contain;
+    transition: transform .2s;
+}
+.product_block:hover .product_img_link .product_img {
+    transform: scale(1.2);
 }
 .product_block .product_price {
     display: flex;
@@ -914,7 +942,6 @@ body {
     font-size: 40px;
     margin: 0;
     font-family: 'Montserrat-SemiBold';
-    line-height: 1.4;
 }
 .question_block_bg .question_content_block .question_heading span {
     display: block;
@@ -961,10 +988,11 @@ body {
 @media (max-width: 991px) {
     .question_block_bg {
         flex-direction: column;
-        padding: 30px 30px 0;
+        padding: 30px 30px;
     }
     .question_block_bg .question_bg_image {
         margin: 0;
+        display: none;
     }
 }
 @media (max-width: 575px) {
@@ -1068,6 +1096,7 @@ body {
     .latest_news_section .categories_top {
         flex-direction: row;
         align-items: center;
+        text-align: left;
     }
 }
 @media (max-width: 575px) {

@@ -1,0 +1,64 @@
+/* Indihold banner */
+.indihold_banner_flex {
+    min-height: 500px;
+    padding: 160px 0 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.indihold_banner_flex .indihold_banner_img,
+.indihold_banner_flex .indihold_banner_content {
+    flex: 1;
+    position: relative;
+}
+.indihold_banner_flex .indihold_banner_img {
+    text-align: center;
+}
+.indihold_banner_flex .indihold_banner_img .indihold-img {
+    max-width: 542px;
+    width: 100%;
+}
+.indihold_banner_flex .indihold_banner_img .indihold-lines {
+    position: absolute;
+    right: -110px;
+    bottom: -100px;
+    z-index: -1;
+    rotate: 215deg;
+    max-width: 490px;
+    width: 100%;
+}
+.indihold_banner_content .banner_heading {
+    max-width: 100%;
+}
+.indihold_banner_content .banner_text {
+    max-width: 540px;
+}
+@media (max-width: 991px) {
+    .indihold_banner_flex {
+        flex-direction: column-reverse;
+        padding: 120px 0 80px;
+    }
+    .indihold_banner_content .banner_text {
+        max-width: 100%;
+    }
+    .indihold_banner_flex .indihold_banner_img {
+        padding-top: 50px;
+    }
+    .indihold_banner_flex .indihold_banner_img .indihold-lines {
+        left: 40px;
+        top: 0;
+        bottom: auto;
+        right: auto;
+        rotate: 153deg;
+        max-width: 300px;
+    }
+    .indihold_banner_flex .indihold_banner_content {
+        text-align: center;
+    }
+}
+@media (max-width: 400px) {
+    .indihold_banner_flex .indihold_banner_img .indihold-lines {
+        max-width: 200px;
+    }
+}
