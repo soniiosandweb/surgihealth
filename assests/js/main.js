@@ -50,7 +50,17 @@ jQuery(document).ready(function($){
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '60px',
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '20px',
                 }
             }
         ]
@@ -77,16 +87,32 @@ jQuery(document).ready(function($){
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: '60px',
                 }
             },
             {
-                breakpoint: 578,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: '20px',
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '20px',
                 }
             }
         ]
+    });
+
+    $('.categories_right_tab .nav.nav-pills a[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+        $('.related_products_slider').slick('setPosition');
     });
 
     // Poduct Variant select
@@ -144,5 +170,44 @@ jQuery(document).ready(function($){
         });
     }
 
-    
+    // Video introduction
+    if(document.getElementById("play_button") && document.getElementById("pause_button")) {
+        let playButton = document.getElementById("play_button");
+        let pauseButton = document.getElementById("pause_button");
+
+        playButton.addEventListener("click", function() {
+            video.play();
+            playButton.classList.add('vplay');
+            pauseButton.classList.remove('vpause');
+            document.querySelector('html').classList.add('playvideo');
+        });
+
+        pauseButton.addEventListener("click", function() {
+            video.pause();
+            playButton.classList.remove('vplay');
+            pauseButton.classList.add('vpause');
+        });
+        //Video Play Pause Control End
+
+        //Video Sound on & off Ctrl Start
+        let soundOff = document.getElementById("sound-off");
+        let soundOn = document.getElementById("sound-on");
+        let soundCtrl = document.querySelector(".sound-ctrl");
+
+        soundOff.addEventListener("click", function() {
+            video.muted = true;
+            soundCtrl.classList.add('soundctrlshow');
+        });
+
+        soundOn.addEventListener("click", function() {
+            video.muted = false;
+            soundCtrl.classList.remove('soundctrlshow'); 
+        });
+        //Video Sound on & off Ctrl End
+        video.onended = function() {
+            document.querySelector('html').classList.remove('playvideo');
+            playButton.classList.remove('vplay');
+        };
+    }
+
 });

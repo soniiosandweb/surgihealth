@@ -132,10 +132,15 @@ body {
 }
 @media (max-width: 991px) {
     .header_main {
-        padding: 0px;
+        padding: 15px 0px;
     }
     .header_main .navbar-brand .logo_main {
         max-width: 150px;
+    }
+}
+@media (max-width: 575px) {
+    .header_main .navbar-brand .logo_main {
+        max-width: 120px;
     }
 }
 
@@ -178,6 +183,8 @@ body {
     position: relative;
     padding: 6px 12px;
     font-size: 24px;
+    width: 50px;
+    height: 50px;
 }
 .header_right .btn-header-cart:hover {
     border-color: var(--primary-orange);
@@ -501,6 +508,12 @@ body {
         max-width: 100%;
     }
 }
+@media (max-width: 575px) {
+    .btn-gradient {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+}
 /* left image */
 .slick_banner_slides .slide_left_block.slide_block {
     position: relative;
@@ -635,11 +648,14 @@ body {
     }
 }
 @media (max-width: 575px) {
+    .slick_banner_slides {
+        padding: 100px 0 0;
+    }
     .slick_banner_slides .slide_right_block.slide_block {
         padding: 30px 0px 50px;
     }
     .banner_heading {
-        font-size: 34px;
+        font-size: 30px;
     }
     .slide_left_block.slide_block .float_btn {
         padding: 5px;
@@ -717,6 +733,14 @@ body {
     .categories_top {
         text-align: center;
         flex-direction: column;
+    }
+}
+@media (max-width: 575px) {
+    .subheading {
+        font-size: 18px;
+    }
+    .main_heading {
+        font-size: 25px;
     }
 }
 .categories_product_flex {
@@ -997,11 +1021,11 @@ body {
 }
 @media (max-width: 575px) {
     .question_block_bg .question_content_block .question_heading {
-        font-size: 33px;
+        font-size: 28px;
         line-height: 1.2;
     }
     .question_block_bg {
-        padding: 30px 15px 0;
+        padding: 30px 15px;
     }
     .button_flex {
         flex-direction: column;
@@ -1009,6 +1033,7 @@ body {
     }
     .button_flex .btn-text-only{
         padding: 15px 0;
+        font-size: 16px;
     }
 }
 
@@ -1106,5 +1131,8 @@ body {
     .latest_news_block .news_title {
         font-size: 20px;
         margin-bottom: 20px;
+    }
+    .latest_news_slider .latest_news_item {
+        padding: 0 5px;
     }
 }

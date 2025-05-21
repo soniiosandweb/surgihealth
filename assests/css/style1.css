@@ -11,7 +11,12 @@
     background-color: var(--primary-blue);
     border-color: var(--primary-blue);
 }
-
+@media (max-width: 575px) {
+    .btn-orange {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+}
 /* header */
 .header_new_design .navbar-nav {
     gap: 5px;
@@ -38,6 +43,7 @@
 .header_new_design .new_header_div .header_right .btn-header-cart {
     border: none;
     padding: 6px;
+    width: 40px;
 }
 .header_new_design .new_header_div .header_right .btn-login {
     margin-left: 8px;
@@ -89,6 +95,12 @@
     }
     .header_new_design .new_header_div .header_right i {
         font-size: 20px;
+    }
+    .header_new_design .new_header_div .header_right .btn-login {
+        padding: 0 5px;
+    }
+    .header_new_design .new_header_div .header_right .btn-header-cart {
+        width: 35px;
     }
 }
 /* Banner section new */

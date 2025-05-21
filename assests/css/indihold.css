@@ -6,6 +6,7 @@
     align-items: center;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 .indihold_banner_flex .indihold_banner_img,
 .indihold_banner_flex .indihold_banner_content {
@@ -61,4 +62,257 @@
     .indihold_banner_flex .indihold_banner_img .indihold-lines {
         max-width: 200px;
     }
+}
+
+/* Introduction section */
+.introduction_heading {
+    font-size: 40px;
+    font-family: 'Montserrat-SemiBold';
+    margin-bottom: 30px;
+    color: var(--color-blue);
+}
+.introduction_block .paragraph {
+    color: var(--color-blue);
+    margin-bottom: 30px;
+}
+
+.video-introduction {
+    margin: auto;
+    max-width: 885px;
+    position: relative;
+}
+
+.video-introduction .poster-img {
+    display: block;
+    width: 100%;
+}
+
+.video-introduction video {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.video-introduction .play-btn, 
+.video-introduction .pause-btn {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #F4942E;
+    color: var(--color-white);
+    z-index: 3;
+    cursor: pointer;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+.video-introduction .play-btn:hover, 
+.video-introduction .pause-btn:hover {
+    background-color: var(--primary-blue);
+}
+
+.video-introduction .pause-btn {
+    display: none;
+}
+
+.video-introduction .play-btn i,
+.video-introduction .pause-btn i {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.playvideo .video-introduction img {
+    opacity: 0;
+}
+
+.playvideo .video-introduction video {
+    opacity: 1;
+}
+
+.video-introduction .vplay {
+    display: none;
+}
+
+.video-introduction:hover .vplay + .pause-btn {
+    display: block;
+}
+
+/***Volume Control***/
+html:not(.playvideo) .sound-ctrl {
+    display: none;
+}
+
+.sound-ctrl {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    bottom: 12px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #F4942E;
+    font-size: 11px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: 50%;
+}
+
+.sound-ctrl:hover {
+    background-color: var(--primary-blue);
+}
+
+.sound-ctrl .on-button {
+    display: none;
+}
+
+.sound-ctrl i {
+    display: none;
+}
+
+.sound-ctrl .off-button, 
+.sound-ctrl .on-button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 0px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.soundctrlshow .on-button {
+    display: block;
+}
+
+.soundctrlshow .off-button {
+    display: none;
+}
+
+.playvideo .video-introduction .sound-ctrl i.fi-rr-volume {
+    display: block;
+}
+
+.playvideo .video-introduction .soundctrlshow i.fi-rr-volume-slash {
+    opacity: 1;
+    display: block;
+}
+.playvideo .video-introduction .soundctrlshow i.fi-rr-volume {
+    display: none;
+}
+
+@media (max-width:991px) {
+    .video-introduction {
+        max-width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .sound-ctrl {
+        left: 8px;
+        bottom: 6px;
+    }
+}
+@media (max-width: 575px) {
+    .video-introduction .play-btn, 
+    .video-introduction .pause-btn {
+        width: 40px;
+        height: 40px;
+    }
+    .video-introduction .play-btn i, 
+    .video-introduction .pause-btn i {
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px) {
+    .sound-ctrl {
+        left: 4px;
+        bottom: 2px;
+    }
+}
+
+/* why choose difference section */
+.why_choose_difference .indihold-col {
+    padding: 12px;
+}
+.choose_difference_block {
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+}
+.choose_difference_block .introduction_heading {
+    max-width: 500px;
+    margin: 0;
+}
+.choose_difference_block .paragraph {
+    color: var(--color-blue);
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+    .choose_difference_block {
+        padding: 2rem;
+    }
+}
+@media (max-width: 575px) {
+    .choose_difference_block {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    .introduction_heading {
+        font-size: 30px;
+    }
+}
+/* Indihold product block */
+.price-subheading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.color-red {
+    color: #FF0000;
+}
+.color-yellow {
+    color: #F4BF2E;
+}
+.price-subheading .product_subtitle {
+    font-size: 15px;
+    margin: 0;
+}
+.product_image_block {
+    background-color: var(--color-lightwhite);
+    height: 100%;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+.indihold-product-section .product_description {
+    margin-bottom: 0;
 }
