@@ -210,4 +210,17 @@ jQuery(document).ready(function($){
         };
     }
 
+    // How to order page tabs
+    if($('.ordering_tabs_block')) {
+        $('.ordering_block_header .block_heading').click(function(e){
+            var element = $(this).attr('data-id');
+
+            $('.ordering_block_header .block_heading').removeClass('active');
+            $('.ordering_contents_text').removeClass('active');
+
+            $(this).addClass('active');
+            $('.ordering_contents_text[data-id = '+element+']').addClass('active');
+        });
+    }
+
 });

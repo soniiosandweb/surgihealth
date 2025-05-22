@@ -21,7 +21,15 @@
     font-family: 'Montserrat-SemiBold';
     margin: 0;
 }
-
+.breadcrum-bg .breadcrums_content .header_right .search_input,
+.breadcrum-bg .breadcrums_content .header_right .btn-header-cart {
+    color: var(--color-blue);
+    border-color: var(--color-blue);
+}
+.breadcrum-bg .breadcrums_content .header_right .btn-submit,
+.breadcrum-bg .breadcrums_content .header_right .search_input::placeholder {
+    color: var(--color-blue);
+}
 /* Product listing sidebar */
 .product_listing_flex {
     display: flex;

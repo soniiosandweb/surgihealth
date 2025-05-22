@@ -281,6 +281,10 @@ body {
 #mainnavbar.collapse.show .navbar-nav .dropdown-menu .dropdown-item {
     color: var(--color-blue);
 }
+#mainnavbar.collapse.show .header_right .btn-header-cart,
+#mainnavbar.collapse.show .header_right form {
+    display: none !important;
+}
 
 /* footer */
 .main_footer {

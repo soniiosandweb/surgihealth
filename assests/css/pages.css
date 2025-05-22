@@ -1,0 +1,169 @@
+/* Breadcrums */
+.breadcrums_content {
+    display: flex;
+    flex-direction: column;
+}
+.breadcrumbs_banner_block {
+    position: relative;
+    background-image: url('../images/everis_medical_instruments.png');
+    background-size: cover;
+}
+.breadcrumbs_banner_block::after {
+    content: "";
+    background-color: rgb(38 38 112 / 55%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.breadcrumbs_banner_block .breadcrums_content {
+    padding: 140px 0 70px;
+    position: relative;
+    z-index: 1;
+}
+.breadcrumbs_banner_block .breadcrums_content .page_title {
+    color: var(--color-white);
+    margin-bottom: 10px;
+    order: 0;
+}
+.breadcrums_content .header_right {
+    justify-content: center;
+    display: none !important;
+}
+.breadcrumbs_banner_block .breadcrums_content .breadcrumb {
+    order: 1;
+    margin: 0;
+}
+@media (max-width: 991px) {
+    .breadcrumbs_banner_block .breadcrums_content {
+        padding: 100px 0 50px;
+        text-align: center;
+    }
+    .breadcrums_content .page_title {
+        text-align: center;
+    }
+    .breadcrums_content .breadcrumb {
+        justify-content: center;
+    }
+    .breadcrums_content .header_right {
+        display: flex !important;
+        margin-bottom: 2rem;
+    }
+    .breadcrums_content .header_right .search_input {
+        max-width: unset;
+    }
+}
+/* How to order page */
+.ordering_block_columns_block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.ordering_block_columns {
+    flex: 1;
+}
+.ordering_block_header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ordering_block_header .block_heading {
+    font-size: 33px;
+    text-transform: uppercase;
+    color: var(--color-blue);
+    font-family: 'Montserrat-SemiBold';
+    margin: 0;
+    cursor: pointer;
+}
+.ordering_block_header .block_heading.active {
+    background: -webkit-linear-gradient(90deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ordering_block_columns p {
+    margin: 0;
+    font-size: 18px;
+    word-break: break-word;
+}
+.ordering_block_columns .block_text_content,
+.ordering_block_columns .block_text_content a {
+    color: #00000059;
+}
+.ordering_block_columns .block_link_content{
+    font-family: 'Montserrat-SemiBold';
+}
+.ordering_block_columns .block_link_content a {
+    color: var(--color-blue);
+}
+.ordering_block_columns_block .ordering_contents_text {
+    display: none;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--primary-orange);
+}
+.ordering_block_columns_block .ordering_contents_text.active {
+    display: none;
+}
+.ordering_contents_text {
+    display: none;
+    margin-top: 5rem;
+}
+.ordering_contents_text.active {
+    display: block;
+}
+.ordering_contents_text .block_heading {
+    font-size: 33px;
+    font-family: 'Montserrat-SemiBold';
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(90deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ordering_contents_text .ordering_contents_para {
+    margin-bottom: 1rem;
+    color: var(--color-blue);
+    font-size: 18px;
+}
+.ordering_contents_text .ordering_contents_para:last-child {
+    margin-bottom: 0;
+}
+@media (max-width: 991px) {
+    .ordering_block_header .block_heading,
+    .ordering_contents_text .block_heading {
+        font-size: 25px;
+    }
+    .ordering_block_columns p,
+    .ordering_contents_text .ordering_contents_para {
+        font-size: 16px;
+    }
+    .ordering_block_columns_block {
+        gap: 1rem;
+    }
+}
+@media (max-width: 767px) {
+    .ordering_block_contents {
+        display: none;
+    }
+    .ordering_block_columns_block {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .ordering_block_columns {
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        padding: 3rem;
+        border-radius: 8px;
+        background-color: var(--color-lightwhite);
+    }
+    .ordering_block_columns_block .ordering_contents_text.active {
+        display: block;
+    }
+}
+@media (max-width: 575px) {
+    .ordering_block_columns {
+        padding: 2rem 1rem;
+    }
+}
