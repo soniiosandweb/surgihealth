@@ -223,4 +223,19 @@ jQuery(document).ready(function($){
         });
     }
 
+    // Cart Modal
+    $("#cartModal").modal({
+        show: false,
+        backdrop: 'static'
+    });
+
+    $('.next_step_btn').click(function(e){
+        var next = $(this).attr('data-id');
+
+        if(next){
+            $('.cart_form_step').removeClass('show');
+            $('#'+next).addClass('show');
+        }
+    });
+
 });
