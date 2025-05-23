@@ -172,6 +172,9 @@
 .cartModal {
     z-index: 11111;
 }
+.cartModal.show {
+    display: flex !important;
+}
 .cartModal .modal-dialog {
     height: 100%;
     margin: 0 0 0 auto;
@@ -209,6 +212,7 @@
     padding: 20px 0 0;
     border-color: var(--color-gray);
     justify-content: start;
+    gap: 1rem;
 }
 .cart_modal_content .btn-checkout {
     width: 100%;
@@ -222,7 +226,7 @@
     color: var(--primary-orange);
     width: 100%;
     text-align: center;
-    margin: 15px 0 0;
+    margin: 0;
 }
 .cart_modal_content .modal-footer .btn_view_cart:hover {
     color: var(--primary-blue);
@@ -266,6 +270,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .cart_product_content .cart_product_title_block p {
     margin: 0;
@@ -286,12 +291,10 @@
     font-size: 18px;
     margin: 0;
     font-family: 'Montserrat-Bold';
-    flex: 1;
     text-align: right;
 }
 .product_quantity {
     display: flex;
-    flex: 1;
     background-color: var(--color-lightwhite);
     max-width: max-content;
     padding: 7px;
@@ -310,14 +313,12 @@
     background: transparent;
     color: var(--color-blue);
 }
-/* For Chrome, Safari, Edge, and Opera */
+
 .product_quantity input.product_qty::-webkit-outer-spin-button,
 .product_quantity input.product_qty::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* For Firefox */
 .product_quantity input.product_qty {
   -moz-appearance: textfield;
 }
@@ -327,4 +328,50 @@
     line-height: 1;
     padding: 0;
     cursor: pointer;
+}
+.cart_total {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+}
+.cart_total .cart_total_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.cart_total .cart_total_list p {
+    margin: 0;
+    font-family: 'Montserrat-SemiBold';
+    color: var(--color-blue);
+}
+.cart_total .cart_total_list p.cart_total_text {
+    color: var(--color-bg);
+}
+@media (max-width: 767px) {
+    .cartModal .modal-dialog {
+        height: 95%;
+        margin: auto;
+        padding: 10px;
+    }
+}
+@media (max-width: 575px) {
+    .cartModal .modal-content {
+        padding: 1rem;
+    }
+    .cartModal .modal-content .modal-body {
+        padding: 1rem 0;
+    }
+    .cart_product_list .cart_product_item .cart_product_img {
+        width: 60px;
+        height: 60px;
+    }
+    .cart_product_content .cart_product_title_block p,
+    .btn-text-only {
+        font-size: 16px;
+    }
+    .product_quantity input.product_qty {
+        width: 30px;
+    }
 }

@@ -38,6 +38,14 @@ jQuery(document).ready(function($){
         adaptiveHeight: true,
         autoplay: false,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: false,
+                }
+            }
+        ]
     });
 
     // News slick slider
