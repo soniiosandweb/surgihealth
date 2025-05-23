@@ -72,6 +72,7 @@
         background-color: transparent;
         border-color: transparent;
         font-size: 24px;
+        height: 100%;
     }
     .header_new_design .new_header_div .header_right .btn-login span {
         display: none;

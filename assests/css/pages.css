@@ -35,6 +35,19 @@
     order: 1;
     margin: 0;
 }
+.breadcrums_content .breadcrums_img {
+    order: 2;
+    width: max-content;
+    position: absolute;
+    bottom: -40px;
+    z-index: -1;
+    right: 100px;
+}
+@media (max-width: 1199px) {
+    .breadcrums_content .breadcrums_img {
+        right: 0;
+    }
+}
 @media (max-width: 991px) {
     .breadcrumbs_banner_block .breadcrums_content {
         padding: 100px 0 50px;
@@ -52,6 +65,12 @@
     }
     .breadcrums_content .header_right .search_input {
         max-width: unset;
+    }
+    .breadcrums_content .breadcrums_img {
+        position: relative;
+        margin-bottom: -50px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 /* How to order page */
@@ -373,5 +392,79 @@
     }
     .product_quantity input.product_qty {
         width: 30px;
+    }
+}
+
+/* Login page */
+.login_signup_block {
+    background-color: var(--color-lightwhite);
+    max-width: 655px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 3rem;
+}
+.login_signup_heading {
+    font-size: 40px;
+    font-family: 'Montserrat-SemiBold';
+    color: var(--color-blue);
+    margin-bottom: 20px;
+}
+.login_signup_content {
+    color: var(--color-blue);
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+}
+.login_signup_form .form-control {
+    padding: 12px 8px 12px 0px;
+    font-family: 'Poppins';
+    color: var(--color-blue);
+    border-left: 0;
+    box-shadow: unset;
+    outline: unset;
+    border-color: var(--color-bg);
+}
+.login_signup_form .form-control::placeholder {
+    color: var(--color-bg);
+}
+.login_signup_form .input-group {
+    padding-bottom: 1.5rem;
+}
+.login_signup_form .input-group .input-group-text {
+    line-height: 1;
+    font-size: 20px;
+    color: var(--color-bg);
+    background-color: var(--color-white);
+    border-color: var(--color-bg);
+    padding: 8px 15px;
+}
+.login_signup_form .btn-form-submit {
+    width: 100%;
+    margin: 20px 0 10px;
+}
+.login_signup_form .btn-form-submit:hover {
+    background-color: var(--primary-blue);
+    color: var(--color-white);
+}
+.login_signup_form .btn-forgot-password {
+    color: var(--color-blue);
+    margin: 20px 0;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.login_signup_form .btn-forgot-password:hover {
+    color: var(--primary-orange);
+}
+@media (max-width: 575px) {
+    .login_signup_block {
+        padding: 1.5rem;
+    }
+    .login_signup_heading {
+        font-size: 30px;
+    }
+    .login_signup_form .btn-form-submit {
+        margin: 10px 0;
     }
 }

@@ -75,14 +75,16 @@
                             </button>
                             <input class="form-control search_input" type="text" placeholder="Search" name="search_input">
                         </form>
-                        <button type="button" class="btn-header-cart">
+                        <button type="button" class="btn-header-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
                             <i class="fi-rr-shopping-cart"></i>
                             <span class="cart_amount">4</span>
                         </button>
-                        <button type="button" class="btn-login">
-                            <i class="fi fi-rr-user"></i> 
-                            <span>Login</span>
-                        </button>
+                        <a href="/surgi-health/login.html" class="d-inline">
+                            <button type="button" class="btn-login">
+                                <i class="fi fi-rr-user"></i> 
+                                <span>Login</span>
+                            </button>
+                        </a>
                     </div>
 
                 </div>
@@ -199,7 +201,7 @@
                                 <i class="fi-rr-shopping-cart"></i>
                                 <span>Buy Now</span>
                             </button>
-                            <button class="btn-add-to-cart" type="button">
+                            <button class="btn-add-to-cart" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">
                                 Add to Cart
                             </button>
                         </div>
@@ -248,7 +250,7 @@
                                 </div>
                                 <div class="add_to_cart_block">
                                     <button class="btn_buy_now btn_product">Buy Now</button>
-                                    <button class="btn_cart btn_product">Add to Cart</button>
+                                    <button class="btn_cart btn_product" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +271,7 @@
                                 </div>
                                 <div class="add_to_cart_block">
                                     <button class="btn_buy_now btn_product">Buy Now</button>
-                                    <button class="btn_cart btn_product">Add to Cart</button>
+                                    <button class="btn_cart btn_product" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -290,7 +292,7 @@
                                 </div>
                                 <div class="add_to_cart_block">
                                     <button class="btn_buy_now btn_product">Buy Now</button>
-                                    <button class="btn_cart btn_product">Add to Cart</button>
+                                    <button class="btn_cart btn_product" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -311,7 +313,7 @@
                                 </div>
                                 <div class="add_to_cart_block">
                                     <button class="btn_buy_now btn_product">Buy Now</button>
-                                    <button class="btn_cart btn_product">Add to Cart</button>
+                                    <button class="btn_cart btn_product" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -332,7 +334,7 @@
                                 </div>
                                 <div class="add_to_cart_block">
                                     <button class="btn_buy_now btn_product">Buy Now</button>
-                                    <button class="btn_cart btn_product">Add to Cart</button>
+                                    <button class="btn_cart btn_product" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -392,7 +394,7 @@
                         <ul class="footer_menu">
                             <li><a href="#" class="footer_menu_link">News</a></li>
                             <li><a href="/surgi-health/ordering.html" class="footer_menu_link">How To Order</a></li>
-                            <li><a href="#" class="footer_menu_link">Account</a></li>
+                            <li><a href="/surgi-health/login.html" class="footer_menu_link">Account</a></li>
                             <li><a href="#" class="footer_menu_link">Distributors</a></li>
                         </ul>
 
@@ -473,6 +475,88 @@
             </div>
         </div>
     </footer>
+
+    <!-- The Modal -->
+    <div class="modal cartModal" id="cartModal">
+        <div class="modal-dialog">
+            <div class="modal-content cart_modal_content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Cart</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fi-rr-cross"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                   <ul class="cart_product_list">
+                        <li class="cart_product_item">
+                            <a href="/surgi-health/product-detail.html" class="d-block">
+                                <img class="cart_product_img img-fluid" src="assests/images/cleaning-brush.png" alt="product" />
+                            </a>
+                            
+                            <div class="cart_product_content">
+                                <div class="cart_product_title_block">
+                                    <a href="/surgi-health/product-detail.html" class="d-block"><p>Channel Cleaning Brushes</p></a>
+                                    <button type="button" class="cart_remove">
+                                        <i class="fi-rr-trash"></i>
+                                    </button>
+                                </div>
+                                <div class="cart_product_price_quantity">
+                                    <div class="product_quantity">
+                                        <span class="btn-minus"><i class="fi-rr-minus-small"></i></span>
+                                        <input type="number" value="1" name="quantity" class="product_qty" />
+                                        <span class="btn-plus"><i class="fi-rr-plus-small"></i></span>
+                                    </div>
+                                    <p class="product_price gradient_text">$ 34.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cart_product_item">
+                            <a href="/surgi-health/product-detail.html" class="d-block">
+                                <img class="cart_product_img img-fluid" src="assests/images/cleaning-brush.png" alt="product" />
+                            </a>
+                            
+                            <div class="cart_product_content">
+                                <div class="cart_product_title_block">
+                                    <a href="/surgi-health/product-detail.html" class="d-block"><p>Channel Cleaning Brushes</p></a>
+                                    <button type="button" class="cart_remove">
+                                        <i class="fi-rr-trash"></i>
+                                    </button>
+                                </div>
+                                <div class="cart_product_price_quantity">
+                                    <div class="product_quantity">
+                                        <span class="btn-minus"><i class="fi-rr-minus-small"></i></span>
+                                        <input type="number" value="1" name="quantity" class="product_qty" />
+                                        <span class="btn-plus"><i class="fi-rr-plus-small"></i></span>
+                                    </div>
+                                    <p class="product_price gradient_text">$ 34.00</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="modal-footer">
+                    <ul class="cart_total">
+                        <li class="cart_total_list">
+                            <p class="cart_total_title">Items</p>
+                            <p class="cart_total_text">2 Items</p>
+                        </li>
+                        <li class="cart_total_list">
+                            <p class="cart_total_title">Subtotal</p>
+                            <p class="cart_total_text">$ 68.00</p>
+                        </li>
+                    </ul>
+                    <button class="btn-checkout btn-gradient" type="button" data-id="select_address_form">Checkout</button>
+                    <a href="#" class="btn_view_cart btn-text-only d-block">View Cart</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     
     <!-- Jquery -->
     <script src="assests/js/jquery.min.js"></script>

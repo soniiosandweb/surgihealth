@@ -243,10 +243,10 @@ jQuery(document).ready(function($){
     }
 
     // Cart Modal
-    $("#cartModal").modal({
-        show: false,
-        backdrop: 'static'
-    });
+    // $("#cartModal").modal({
+    //     show: false,
+    //     backdrop: 'static'
+    // });
 
     // Cart quantity change
     $('.btn-minus').click(function () {
