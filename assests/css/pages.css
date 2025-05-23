@@ -218,6 +218,15 @@
     background-color: var(--primary-blue);
     color: var(--color-white);
 }
+.cart_modal_content .modal-footer .btn_view_cart {
+    color: var(--primary-orange);
+    width: 100%;
+    text-align: center;
+    margin: 15px 0 0;
+}
+.cart_modal_content .modal-footer .btn_view_cart:hover {
+    color: var(--primary-blue);
+}
 .cartModal .modal-content .modal-body {
     padding: 2rem 0;
 }
