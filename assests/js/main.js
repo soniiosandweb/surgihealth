@@ -9,6 +9,17 @@ jQuery(document).ready(function($){
         $("#mainnavbar").removeClass("show");
     });
 
+    // Window resize close mobile toggle
+    $(window).on('resize', function() {
+        var windowWidth = $(window).width();
+
+        if (windowWidth >= 992) {
+            if($('#mainnavbar').hasClass('show')){
+                $("#mainnavbar").removeClass("show");
+            }
+        }
+    });
+
     // fixed header
     $(window). scroll(function() {
         var scroll = $(window). scrollTop();
@@ -229,13 +240,28 @@ jQuery(document).ready(function($){
         backdrop: 'static'
     });
 
-    $('.next_step_btn').click(function(e){
-        var next = $(this).attr('data-id');
+    // Cart quantity change
+    $('.btn-minus').click(function () {
+		var $input = $(this).parent().find('input');
+		var count = parseInt($input.val()) - 1;
+		count = count < 1 ? 1 : count;
+		$input.val(count);
+		$input.change();
+		return false;
+	});
+	$('.btn-plus').click(function () {
+		var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) + 1;
+		count = isNaN(count) ? 1 : count;
+		$input.val(count);
 
-        if(next){
-            $('.cart_form_step').removeClass('show');
-            $('#'+next).addClass('show');
-        }
+		$input.change();
+		return false;
+	});
+
+    // Number only in quantity
+    $(document).on("input", ".product_qty", function() {
+        this.value = this.value.replace(/\D/g,'');
     });
 
 });

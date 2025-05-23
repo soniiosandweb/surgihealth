@@ -137,7 +137,7 @@ body {
     }
 }
 @media (max-width: 991px) {
-    .header_main {
+    .header_main .navbar {
         padding: 15px 0px;
     }
     .header_main .navbar-brand .logo_main {
