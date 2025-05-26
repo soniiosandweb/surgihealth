@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordering - SurgiHealth</title>
+    <title>Cart - SurgiHealth</title>
 
     <link rel="icon" href="assests/images/logo.png" />
 
@@ -112,92 +112,132 @@
                                 <span class="cart_amount">4</span>
                             </button>
                         </div>
-
                         
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/surgi-health/index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Ordering</li>
+                            <li class="breadcrumb-item active">Cart</li>
                         </ul>
                         
-                        <p class="page_title">Ordering</p>
+                        <p class="page_title">Cart</p>
+
+                        <img class="breadcrums_img img-fluid" src="assests/images/side-view-woman.png" alt="Woman" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ordering Section -->
-    <section class="ordering_section section-padding section-bottom-padding section-top-padding">
+    <!-- Cart Section -->
+    <section class="cart_section_block section-padding section-bottom-padding section-top-padding">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
-                    <div class="ordering_tabs_block">
+                    <h2 class="heading2">Your Cart (<span>4 Items</span>)</h2>
+                    <div class="table-responsive">
+                        <table class="cart_items_table">
+                            <thead>
+                                <tr>
+                                    <th class="w-40">Item</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="cart_product_item">
+                                            <a href="/surgi-health/product-detail.html" class="d-block">
+                                                <img class="cart_product_img img-fluid" src="assests/images/handle-brush.png" alt="product" />
+                                            </a>
+                                            <div class="cart_product_content">
+                                                <div class="cart_product_title_block">
+                                                    <a href="/surgi-health/product-detail.html" class="d-block">
+                                                        <p>Plastic Handle Brushes</p>
+                                                    </a>
+                                                </div>
+                                                <p class="product_subtitle">Packing - 2/PK & 50/PK</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Price" class="text-center color-gray">$ 34.00</td>
+                                    <td data-label="Quantity" class="text-center">
+                                        <div class="product_quantity">
+                                            <span class="btn-minus"><i class="fi-rr-minus-small"></i></span>
+                                            <input type="number" value="1" name="quantity" class="product_qty" />
+                                            <span class="btn-plus"><i class="fi-rr-plus-small"></i></span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Total" class="text-center">
+                                        <div class="product_remove_text gap-2">
+                                            <span class="gradient_text">$ 34.00</span>
+                                            <span class="remove_product"><i class="fi-rr-cross"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="cart_product_item">
+                                            <a href="/surgi-health/product-detail.html" class="d-block">
+                                                <img class="cart_product_img img-fluid" src="assests/images/handle-brush.png" alt="product" />
+                                            </a>
+                                            <div class="cart_product_content">
+                                                <div class="cart_product_title_block">
+                                                    <a href="/surgi-health/product-detail.html" class="d-block">
+                                                        <p>Plastic Handle Brushes</p>
+                                                    </a>
+                                                </div>
+                                                <p class="product_subtitle">Packing - 2/PK & 50/PK</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Price" class="text-center color-gray">$ 34.00</td>
+                                    <td data-label="Quantity" class="text-center">
+                                        <div class="product_quantity">
+                                            <span class="btn-minus"><i class="fi-rr-minus-small"></i></span>
+                                            <input type="number" value="1" name="quantity" class="product_qty" />
+                                            <span class="btn-plus"><i class="fi-rr-plus-small"></i></span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Total" class="text-center">
+                                        <div class="product_remove_text gap-2">
+                                            <span class="gradient_text">$ 34.00</span>
+                                            <span class="remove_product"><i class="fi-rr-cross"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="ordering_block_columns_block">
-                            <div class="ordering_block_columns">
-                                <div class="ordering_block_header">
-                                    <h2 class="block_heading active" data-id="online_order">Online Ordering</h2>
-                                    <p class="block_text_content"><a href="#">Sign In</a> to your account to purchase products now.</p>
-                                    <p class="block_link_content">Support: <a href="mailto:orders.online@surgihealth.com">orders.online@surgihealth.com</a></p>
-                                </div>
-                                <div class="ordering_contents_text active" data-id="online_order">
-                                    <h2 class="block_heading">Online Ordering</h2>
-                                    <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                    <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                                </div>
-                            </div>
-
-                            <div class="ordering_block_columns">
-                                <div class="ordering_block_header">
-                                    <h2 class="block_heading" data-id="direct_order">Direct Ordering</h2>
-                                    <p class="block_text_content">Submit your order requests by phone or email.</p>
-                                    <p class="block_link_content">Phone: <a href="tel:8448878744">844.88.SURGI (78744)</a></p>
-                                    <p class="block_link_content">Email: <a href="mailto:orders@surgihealth.com">orders@surgihealth.com</a></p>
-                                </div>
-
-                                <div class="ordering_contents_text" data-id="direct_order">
-                                    <h2 class="block_heading">Direct Ordering</h2>
-                                    <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                    <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                                </div>
-                            </div>
-
-                            <div class="ordering_block_columns">
-                                <div class="ordering_block_header">
-                                    <h2 class="block_heading" data-id="new_account">New Customer Account</h2>
-                                    <p class="block_text_content">To create a new Customer Account for Online and Direct ordering, click the link below</p>
-                                    <p class="block_link_content"><a href="#">New Customer Account (Online Form)</a></p>
-                                </div>
-
-                                <div class="ordering_contents_text" data-id="new_account">
-                                    <h2 class="block_heading">New Customer Account</h2>
-                                    <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                    <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                                </div>
-
-                            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="order_summary_block">
+                        <h2 class="heading2">Order Summary</h2>
+                        <ul class="cart_total">
+                            <li class="cart_total_list">
+                                <p class="cart_total_title">Subtotal</p>
+                                <p class="cart_total_text">$136.00</p>
+                            </li>
+                            <li class="cart_total_list">
+                                <p class="cart_total_title">Shipping</p>
+                                <p class="cart_total_text">$5.00</p>
+                            </li>
+                            <li class="cart_total_list">
+                                <p class="cart_total_title">Tax</p>
+                                <p class="cart_total_text">$5.00</p>
+                            </li>
+                            <li class="cart_total_list">
+                                <p class="cart_total_title">Grand Total</p>
+                                <p class="cart_total_text gradient_text">$146.00</p>
+                            </li>
+                        </ul>
+                        <div class="cart_btn_block">
+                            <a href="#" class="btn-checkout btn-gradient d-block text-center">Continue to Checkout</a>
+                            <a href="/surgi-health/product-listing.html" class="btn_continue_shoping btn-gradient-blue text-center d-block">View Cart</a>
                         </div>
-
-                        <div class="ordering_block_contents">
-                            <div class="ordering_contents_text active" data-id="online_order">
-                                <h2 class="block_heading">Online Ordering</h2>
-                                <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                            </div>
-
-                            <div class="ordering_contents_text" data-id="direct_order">
-                                <h2 class="block_heading">Direct Ordering</h2>
-                                <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                            </div>
-
-                            <div class="ordering_contents_text" data-id="new_account">
-                                <h2 class="block_heading">New Customer Account</h2>
-                                <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
