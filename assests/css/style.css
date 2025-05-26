@@ -41,6 +41,7 @@ body {
 }
 a {
     text-decoration: unset;
+    outline: unset;
 }
 .relative {
     position: relative;
@@ -120,6 +121,11 @@ a {
 }
 .header_main .navbar-nav .dropdown-menu .dropdown-item {
     font-family: "Poppins";
+}
+.header_main .navbar-nav .dropdown-menu .dropdown-item:hover,
+.header_main .navbar-nav .dropdown-menu .dropdown-item:active {
+    color: var(--primary-orange);
+    background-color: transparent;
 }
 .header_main .navbar-nav,
 .header_right {
