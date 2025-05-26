@@ -272,4 +272,15 @@ jQuery(document).ready(function($){
         this.value = this.value.replace(/\D/g,'');
     });
 
+    // International Phone Number
+    const input = document.querySelector("#contactno");
+    if(input) {
+        window.intlTelInput(input, {
+            initialCountry: "in",
+            countrySearch: false,
+            loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js"),
+        });
+    }
+    
+
 });

@@ -397,7 +397,7 @@
 }
 /* Cart Page */
 .heading2 {
-    font-size: 35px;
+    font-size: 30px;
     color: var(--color-blue);
     font-family: 'Montserrat-SemiBold';
     text-align: center;
@@ -566,6 +566,98 @@
     }
 }
 
+/* Checkout page */
+form.checkout_form {
+    display: flex;
+    gap: 3rem;
+}
+.checkout_form .shipping_address {
+    flex: 1;
+}
+.checkout_form .order_details_block {
+    width: 100%;
+    max-width: 470px;
+    padding: 0 2rem;
+}
+.heading2.text-left {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.heading3 {
+    font-size: 20px;
+    color: var(--color-blue);
+    margin-bottom: 2rem;
+    font-family: 'Montserrat-SemiBold';
+}
+.checkout_form .form-row {
+    padding: 8px 0;
+}
+.checkout_form .form-row .form-control {
+    padding: 12px 20px;
+    box-shadow: unset;
+    font-family: 'Montserrat-SemiBold';
+    border: 1px solid #00000033;
+    border-radius: 8px;
+}
+.checkout_form .form-row .form-control:focus {
+    border-color: var(--primary-orange);
+}
+.checkout_form .form-row .form-control::placeholder {
+    color: var(--color-bg);
+}
+.checkout_form .form-row .iti {
+    width: 100%;
+}
+.checkout_form .form-row.form-check label {
+    color: var(--color-bg);
+    font-family: 'Montserrat-SemiBold';
+}
+.checkout_form .form-row .form-check-input {
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    margin: 3px 10px 0 0;
+}
+.divider {
+    height: 1px;
+    background-color: var(--color-bg);
+    width: 100%;
+    margin: 2rem 0;
+}
+.payment_form_title {
+    font-family: 'Montserrat-SemiBold';
+    color: var(--color-blue);
+}
+.checkout_form .form-row-flex {
+    display: flex;
+    gap: 1rem;
+}
+.payment_form_item {
+    margin-bottom: 2rem;
+}
+@media (max-width: 1024px) {
+    form.checkout_form {
+        gap: 0;
+    }
+}
+@media (max-width: 991px) {
+    form.checkout_form {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .checkout_form .order_details_block {
+        padding: 0;
+    }
+}
+@media (max-width: 600px) {
+    .checkout_form .order_details_block {
+        max-width: 100%;
+    }
+    .checkout_form .form-row-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+}
 /* Login page */
 .login_signup_block {
     background-color: var(--color-lightwhite);
