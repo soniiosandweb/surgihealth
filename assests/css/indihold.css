@@ -67,7 +67,8 @@
 /* Introduction section */
 .introduction_heading {
     font-size: 40px;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'Montserrat';
+    font-weight: 600;
     margin-bottom: 30px;
     color: var(--color-blue);
 }

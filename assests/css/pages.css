@@ -91,7 +91,7 @@
     font-size: 33px;
     text-transform: uppercase;
     color: var(--color-blue);
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     margin: 0;
     cursor: pointer;
 }
@@ -110,7 +110,7 @@
     color: #00000059;
 }
 .ordering_block_columns .block_link_content{
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .ordering_block_columns .block_link_content a {
     color: var(--color-blue);
@@ -133,7 +133,7 @@
 }
 .ordering_contents_text .block_heading {
     font-size: 33px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     margin-bottom: 1rem;
     background: -webkit-linear-gradient(90deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
     -webkit-background-clip: text;
@@ -209,7 +209,7 @@
 .cart_modal_content .modal-header {
     border: 0;
     padding: 0;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .cart_modal_content .modal-header .modal-title {
     font-size: 32px;
@@ -295,7 +295,7 @@
 .cart_product_content .cart_product_title_block p {
     margin: 0;
     color: var(--color-blue);
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     font-size: 18px;
 }
 .cart_product_content .cart_product_title_block .cart_remove {
@@ -310,8 +310,8 @@
 .cart_product_price_quantity .product_price {
     font-size: 18px;
     margin: 0;
-    font-family: 'Montserrat-Bold';
     text-align: right;
+    font-weight: 800;
 }
 .product_quantity {
     display: flex;
@@ -319,7 +319,7 @@
     max-width: max-content;
     padding: 7px;
     font-size: 18px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     color: var(--color-blue);
     border-radius: 8px;
 }
@@ -363,7 +363,7 @@
 }
 .cart_total .cart_total_list p {
     margin: 0;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     color: var(--color-blue);
 }
 .cart_total .cart_total_list p.cart_total_text {
@@ -399,7 +399,7 @@
 .heading2 {
     font-size: 30px;
     color: var(--color-blue);
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -410,7 +410,7 @@
 }
 .cart_items_table tr th, 
 .cart_items_table tr td {
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .cart_items_table tr td {
     padding: 15px;
@@ -587,7 +587,7 @@ form.checkout_form {
     font-size: 20px;
     color: var(--color-blue);
     margin-bottom: 2rem;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .checkout_form .form-row {
     padding: 8px 0;
@@ -595,7 +595,7 @@ form.checkout_form {
 .checkout_form .form-row .form-control {
     padding: 12px 20px;
     box-shadow: unset;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     border: 1px solid #00000033;
     border-radius: 8px;
 }
@@ -610,7 +610,7 @@ form.checkout_form {
 }
 .checkout_form .form-row.form-check label {
     color: var(--color-bg);
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .checkout_form .form-row .form-check-input {
     padding: 0;
@@ -626,7 +626,7 @@ form.checkout_form {
     margin: 2rem 0;
 }
 .payment_form_title {
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     color: var(--color-blue);
 }
 .checkout_form .form-row-flex {
@@ -665,17 +665,17 @@ form.checkout_form {
     max-width: 655px;
     margin: auto;
     border-radius: 8px;
-    padding: 3rem;
+    padding: 4rem 5rem;
 }
 .login_signup_heading {
     font-size: 40px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     color: var(--color-blue);
     margin-bottom: 20px;
 }
 .login_signup_content {
     color: var(--color-blue);
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
     font-family: 'Poppins';
 }
 .login_signup_form .form-control {
@@ -691,7 +691,7 @@ form.checkout_form {
     color: var(--color-bg);
 }
 .login_signup_form .input-group {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
 }
 .login_signup_form .input-group .input-group-text {
     line-height: 1;
@@ -704,6 +704,7 @@ form.checkout_form {
 .login_signup_form .btn-form-submit {
     width: 100%;
     margin: 20px 0 10px;
+    padding: 16.5px 30px;
 }
 .login_signup_form .btn-form-submit:hover {
     background-color: var(--primary-blue);
@@ -731,4 +732,35 @@ form.checkout_form {
     .login_signup_form .btn-form-submit {
         margin: 10px 0;
     }
+}
+
+/* Register Page */
+.signup_form .form-row {
+    padding-bottom: 1.2rem;
+}
+.signup_form .form-row .form-control {
+    padding: 12px 20px;
+    border: 1px solid var(--color-bg);
+}
+.signup_form .form-row .form-control:focus {
+    border-color: var(--primary-orange);
+}
+.signup_form .form-row .form-control.password_field {
+    padding-right: 30px;
+}
+.signup_form .form-row .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    color: var(--color-bg);
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+}
+.signup_form .form-row label {
+    font-family: 'Poppins';
+    color: var(--color-blue);
+}
+.signup_form .form-row .form-check-input {
+    border: 1px solid var(--color-bg);
 }

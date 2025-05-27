@@ -112,19 +112,19 @@ jQuery(document).ready(function($){
                 }
             },
             {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    centerMode: true,
-                    centerPadding: '20px',
-                }
-            },
-            {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '20px',
+                    centerPadding: '60px',
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '30px',
                 }
             }
         ]
@@ -282,5 +282,16 @@ jQuery(document).ready(function($){
         });
     }
     
+    // Password toggle
+    $(".toggle-password").click(function() {
+
+        $(this).toggleClass("fi-rr-eye fi-rr-eye-crossed");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
 
 });

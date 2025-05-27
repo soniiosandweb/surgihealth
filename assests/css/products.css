@@ -18,7 +18,7 @@
 }
 .breadcrums_content .page_title {
     font-size: 30px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     margin: 0;
 }
 .breadcrum-bg .breadcrums_content .header_right .search_input,
@@ -58,7 +58,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     color: var(--color-blue);
     padding: 10px 0;
     position: relative;
@@ -90,7 +90,7 @@
 }
 .products_lists .product_listing_title {
     font-size: 33px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     color: var(--color-blue);
     margin-bottom: 30px;
 }
@@ -190,6 +190,11 @@
         text-align: left;
     }
 }
+@media (max-width: 991px) {
+    .related_products_slider .slick-list {
+        padding-left: 0 !important;
+    }
+}
 @media (max-width: 767px) {
     .related_products_slider .related_product_item {
         padding: 0 5px;
@@ -198,21 +203,21 @@
 /* Product Detail Section */
 .product_details_content .product_subtitle {
     color: var(--color-bg);
-    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
     font-size: 20px;
     text-transform: capitalize;
     margin-bottom: 8px;
 }
 .product_details_content .product_title {
     color: var(--color-blue);
-    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
     margin-bottom: 10px;
 }
 .product_details_content .product_price {
     display: flex;
     gap: 15px;
     font-size: 28px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .product_price .cutted_price {
     text-decoration: line-through;
@@ -231,7 +236,7 @@
     gap: 5px;
     flex-direction: column;
     flex: auto;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .product_specification .product_specification_item p {
     margin: 0;
@@ -282,12 +287,12 @@
 .product_description p {
     margin: 0;
     font-weight: 500;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .product_description_head, .product_variant .product_variant_title {
     color: var(--color-blue);
     margin-bottom: 10px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
 }
 .product_variant {
     margin-bottom: 30px;
@@ -302,7 +307,7 @@
     font-size: 18px;
     color: var(--color-blue);
     text-transform: capitalize;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     border: none;
 }
 .product_variant .btn-variant-group .btn-radio-select:hover {

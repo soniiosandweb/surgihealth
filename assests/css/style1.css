@@ -5,7 +5,8 @@
     color: var(--color-white);
     border-radius: 8px;
     padding: 10px 30px;
-    font-family: "Montserrat-Bold";
+    font-family: "Montserrat";
+    font-weight: 800;
 }
 .btn-orange:hover {
     background-color: var(--primary-blue);
@@ -232,7 +233,7 @@
 }
 .book_now_flex .book_now_content h5 {
     font-size: 24px;
-    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
     margin: 0;
 }
 .paragraph {
