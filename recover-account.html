@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordering - SurgiHealth</title>
+    <title>Recover Account - SurgiHealth</title>
 
     <link rel="icon" href="assests/images/logo.png" />
 
@@ -112,92 +112,43 @@
                                 <span class="cart_amount">4</span>
                             </button>
                         </div>
-
                         
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/surgi-health/index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Ordering</li>
+                            <li class="breadcrumb-item active">Recover Account</li>
                         </ul>
                         
-                        <p class="page_title">Ordering</p>
+                        <p class="page_title">Recover Account</p>
+
+                        <img class="breadcrums_img img-fluid" src="assests/images/side-view-woman.png" alt="Woman" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ordering Section -->
-    <section class="ordering_section section-padding section-bottom-padding section-top-padding">
-        <div class="container-xxl">
+    <!-- Recover Account form -->
+    <section class="login_section section-padding section-bottom-padding section-top-padding">
+        <div class="container-lg">
             <div class="row">
                 <div class="col">
-                    <div class="ordering_tabs_block">
+                    <div class="login_signup_block">
+                        <form class="login_signup_form" method="post" id="recover_account">
+                            <h1 class="login_signup_heading">Recover <span class="gradient_text">Account</span></h1>
+                            <p class="login_signup_content">Enter your email ID to recover your account </p>
 
-                        <div class="ordering_block_columns_block">
-                            <div class="ordering_block_columns">
-                                <div class="ordering_block_header">
-                                    <h2 class="block_heading active" data-id="online_order">Online Ordering</h2>
-                                    <p class="block_text_content"><a href="/surgi-health/login.html" class="text-decoration-underline">Sign In</a> to your account to purchase products now.</p>
-                                    <p class="block_link_content">Support: <a href="mailto:orders.online@surgihealth.com">orders.online@surgihealth.com</a></p>
-                                </div>
-                                <div class="ordering_contents_text active" data-id="online_order">
-                                    <h2 class="block_heading">Online Ordering</h2>
-                                    <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                    <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                                </div>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fi-rr-envelope"></i>
+                                </span>
+                                <input type="email" class="form-control" name="email_address" placeholder="Email ID" required>
                             </div>
 
-                            <div class="ordering_block_columns">
-                                <div class="ordering_block_header">
-                                    <h2 class="block_heading" data-id="direct_order">Direct Ordering</h2>
-                                    <p class="block_text_content">Submit your order requests by phone or email.</p>
-                                    <p class="block_link_content">Phone: <a href="tel:8448878744">844.88.SURGI (78744)</a></p>
-                                    <p class="block_link_content">Email: <a href="mailto:orders@surgihealth.com">orders@surgihealth.com</a></p>
-                                </div>
+                            <button type="submit" class="btn-form-submit btn-gradient">Submit</button>
 
-                                <div class="ordering_contents_text" data-id="direct_order">
-                                    <h2 class="block_heading">Direct Ordering</h2>
-                                    <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                    <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                                </div>
-                            </div>
+                            <a href="#" class="btn-text-only btn-forgot-password d-flex">Forgot Your Password?</a>
 
-                            <div class="ordering_block_columns">
-                                <div class="ordering_block_header">
-                                    <h2 class="block_heading" data-id="new_account">New Customer Account</h2>
-                                    <p class="block_text_content">To create a new Customer Account for Online and Direct ordering, click the link below</p>
-                                    <p class="block_link_content"><a href="/surgi-health/signup.html">New Customer Account (Online Form)</a></p>
-                                </div>
-
-                                <div class="ordering_contents_text" data-id="new_account">
-                                    <h2 class="block_heading">New Customer Account</h2>
-                                    <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                    <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="ordering_block_contents">
-                            <div class="ordering_contents_text active" data-id="online_order">
-                                <h2 class="block_heading">Online Ordering</h2>
-                                <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                            </div>
-
-                            <div class="ordering_contents_text" data-id="direct_order">
-                                <h2 class="block_heading">Direct Ordering</h2>
-                                <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                            </div>
-
-                            <div class="ordering_contents_text" data-id="new_account">
-                                <h2 class="block_heading">New Customer Account</h2>
-                                <p class="ordering_contents_para">Visit the Surgihealth website or catalog to explore our various products, including medical equipment, surgical instruments Cleaning, and more.</p>
-                                <p class="ordering_contents_para">You can browse by category, brand, or use the search bar to find specific products you're looking for.</p>
-                            </div>
-                        </div>
-
+                        </form>
                     </div>
                 </div>
             </div>

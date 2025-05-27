@@ -617,6 +617,7 @@ form.checkout_form {
     width: 18px;
     height: 18px;
     margin: 3px 10px 0 0;
+    box-shadow: unset;
 }
 .divider {
     height: 1px;
