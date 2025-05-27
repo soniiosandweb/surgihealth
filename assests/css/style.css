@@ -14,6 +14,7 @@
     --color-lightwhite: #F8F8F8;
     --breadcrumb-bg: #E7EEF2;
     --color-gray: #E9E9E9;
+    --bs-border-radius: 8px;
 }
 @font-face {
     font-family: "Montserrat";

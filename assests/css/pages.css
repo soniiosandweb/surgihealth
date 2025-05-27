@@ -679,7 +679,7 @@ form.checkout_form {
     font-family: 'Poppins';
 }
 .login_signup_form .form-control {
-    padding: 12px 8px 12px 0px;
+    padding: 17px 10px 17px 0px;
     font-family: 'Poppins';
     color: var(--color-blue);
     border-left: 0;
@@ -735,11 +735,11 @@ form.checkout_form {
 }
 
 /* Register Page */
-.signup_form .form-row {
+.login_signup_form .form-row {
     padding-bottom: 1.2rem;
 }
-.signup_form .form-row .form-control {
-    padding: 12px 20px;
+.login_signup_form .form-row .form-control {
+    padding: 17px 24px;
     border: 1px solid var(--color-bg);
 }
 .signup_form .form-row .form-control:focus {
@@ -750,17 +750,32 @@ form.checkout_form {
 }
 .signup_form .form-row .toggle-password {
     position: absolute;
-    right: 10px;
-    top: 14px;
+    right: 12px;
+    top: 20px;
     color: var(--color-bg);
     font-size: 20px;
     cursor: pointer;
     line-height: 1;
 }
-.signup_form .form-row label {
+.login_signup_form .form-row label {
     font-family: 'Poppins';
     color: var(--color-blue);
 }
-.signup_form .form-row .form-check-input {
+.login_signup_form .form-row .form-check-input {
     border: 1px solid var(--color-bg);
+}
+
+/* Forgot Password */
+.login_signup_form .input-group .input-subtext {
+    width: 100%;
+    font-family: 'Poppins';
+    padding-top: 5px;
+}
+.login_signup_form .input-group .input-subtext,
+.login_signup_form .input-group .input-subtext a {
+    color: var(--color-blue);
+}
+#forgot_password .form-control {
+    border-top-right-radius: var(--bs-border-radius);
+    border-bottom-right-radius: var(--bs-border-radius);
 }
