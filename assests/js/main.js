@@ -71,7 +71,7 @@ jQuery(document).ready(function($){
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '60px',
+                    centerPadding: '80px',
                 }
             },
             {
@@ -116,7 +116,7 @@ jQuery(document).ready(function($){
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '60px',
+                    centerPadding: '70px',
                 }
             },
             {
@@ -124,7 +124,7 @@ jQuery(document).ready(function($){
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '30px',
+                    centerPadding: '20px',
                 }
             }
         ]

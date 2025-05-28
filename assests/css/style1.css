@@ -6,7 +6,7 @@
     border-radius: 8px;
     padding: 10px 30px;
     font-family: "Montserrat";
-    font-weight: 800;
+    font-weight: 700;
 }
 .btn-orange:hover {
     background-color: var(--primary-blue);
@@ -48,6 +48,7 @@
 }
 .header_new_design .new_header_div .header_right .btn-login {
     margin-left: 8px;
+    min-width: auto;
 }
 .header_new_design #mainnavbar.collapse.show {
     left: 0;
@@ -124,8 +125,8 @@
     left: 0;
 }
 .banner_new_section .new_banner_content {
-    min-height: 500px;
-    padding: 180px 0 120px;
+    min-height: 700px;
+    padding: 200px 0 150px;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -161,7 +162,7 @@
 .banner_search_form .search_input {
     padding: 20px 180px 20px 20px;
     box-shadow: unset;
-    height: 66px;
+    height: 74px;
 }
 .banner_search_form .search_input::placeholder {
     color: var(--color-bg);
@@ -175,7 +176,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 12px 30px;
+    padding: 13.5px 30px;
     top: 6px;
     bottom: 6px;
     height: max-content;
@@ -194,14 +195,20 @@
         flex-direction: column;
     }
     .banner_search_form .btn-submit {
-        position: relative;
+        padding: 6px 10px;
+        right: 6px;
     }
     .banner_search_form .search_input {
-        padding: 15px;
+        padding: 10px 120px 10px 15px;
         height: auto;
     }
     .banner_new_section .new_banner_content {
-        padding: 120px 0 100px;
+        padding: 100px 15px 60px;
+        min-height: auto;
+        text-align: left;
+    }
+    .banner_btn_links {
+        display: none;
     }
 }
 /* Book Now section */
@@ -233,7 +240,7 @@
 }
 .book_now_flex .book_now_content h5 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
 }
 .paragraph {
@@ -248,12 +255,26 @@
 @media (max-width: 767px) {
     .book_now_flex {
         flex-direction: column;
+        align-items: start;
+    }
+    .book_now_flex .book_now_btn {
+        margin-left: 40px;
     }
 }
 @media (max-width: 575px) {
     .book_now_flex .book_now_text {
         flex-direction: column;
-        text-align: center;
+        align-items: start;
+        gap: 20px;
+    }
+    .book_now_flex .book_now_text i {
+        display: none;
+    }
+    .book_now_flex .book_now_content {
+        gap: 20px;
+    }
+    .book_now_flex .book_now_btn {
+        margin-left: 0;
     }
 }
 
