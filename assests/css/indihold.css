@@ -1,12 +1,13 @@
 /* Indihold banner */
 .indihold_banner_flex {
     min-height: 500px;
-    padding: 160px 0 100px;
+    padding: 160px 0 80px;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    gap: 10px;
 }
 .indihold_banner_flex .indihold_banner_img,
 .indihold_banner_flex .indihold_banner_content {
@@ -14,7 +15,7 @@
     position: relative;
 }
 .indihold_banner_flex .indihold_banner_img {
-    text-align: center;
+    text-align: right;
 }
 .indihold_banner_flex .indihold_banner_img .indihold-img {
     max-width: 542px;
@@ -22,10 +23,10 @@
 }
 .indihold_banner_flex .indihold_banner_img .indihold-lines {
     position: absolute;
-    right: -110px;
-    bottom: -100px;
+    right: -245px;
+    bottom: -130px;
     z-index: -1;
-    rotate: 215deg;
+    rotate: 0deg;
     max-width: 490px;
     width: 100%;
 }
@@ -35,10 +36,17 @@
 .indihold_banner_content .banner_text {
     max-width: 540px;
 }
+@media (max-width: 1050px) and (min-width: 992px) {
+    .indihold_banner_flex .indihold_banner_img .indihold-lines {
+        right: -245px;
+        bottom: -155px;
+        rotate: 13deg;
+    }
+}
 @media (max-width: 991px) {
     .indihold_banner_flex {
         flex-direction: column-reverse;
-        padding: 120px 0 80px;
+        padding: 120px 12px 80px;
     }
     .indihold_banner_content .banner_text {
         max-width: 100%;
@@ -47,24 +55,39 @@
         padding-top: 50px;
     }
     .indihold_banner_flex .indihold_banner_img .indihold-lines {
-        left: 40px;
-        top: 0;
+        left: -25px;
+        top: 0px;
         bottom: auto;
         right: auto;
-        rotate: 153deg;
+        rotate: 300deg;
         max-width: 300px;
     }
     .indihold_banner_flex .indihold_banner_content {
         text-align: center;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 575px) {
     .indihold_banner_flex .indihold_banner_img .indihold-lines {
-        max-width: 200px;
+        max-width: 146px;
+        left: 0;
+        rotate: 315deg;
+    }
+    .indihold_banner_flex .indihold_banner_img .indihold-img {
+        max-width: 389px;
+    }
+    .indihold_banner_flex .indihold_banner_img {
+        padding-top: 0px;
+    }
+    .indihold_banner_flex .indihold_banner_content {
+        font-size: 15px;
     }
 }
 
 /* Introduction section */
+.introduction_block {
+    max-width: 1110px;
+    margin: auto;
+}
 .introduction_heading {
     font-size: 40px;
     font-family: 'Montserrat';
@@ -75,11 +98,12 @@
 .introduction_block .paragraph {
     color: var(--color-blue);
     margin-bottom: 30px;
+    font-size: 16px;
 }
 
 .video-introduction {
     margin: auto;
-    max-width: 885px;
+    max-width: 884px;
     position: relative;
 }
 
@@ -261,7 +285,7 @@ html:not(.playvideo) .sound-ctrl {
 .choose_difference_block {
     background-color: #F7F7F7;
     border-radius: 8px;
-    padding: 3rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -273,19 +297,21 @@ html:not(.playvideo) .sound-ctrl {
 }
 .choose_difference_block .paragraph {
     color: var(--color-blue);
+    font-size: 16px;
 }
 @media (max-width: 1023px) and (min-width: 768px) {
     .choose_difference_block {
-        padding: 2rem;
+        padding: 3rem;
     }
 }
 @media (max-width: 575px) {
     .choose_difference_block {
-        padding: 1.5rem;
+        padding: 2rem;
         gap: 1rem;
     }
     .introduction_heading {
-        font-size: 30px;
+        font-size: 25px;
+        margin-bottom: 20px;
     }
 }
 /* Indihold product block */
@@ -298,9 +324,11 @@ html:not(.playvideo) .sound-ctrl {
 }
 .color-red {
     color: #FF0000;
+    font-weight: 600;
 }
 .color-yellow {
     color: #F4BF2E;
+    font-weight: 600;
 }
 .price-subheading .product_subtitle {
     font-size: 15px;
@@ -316,4 +344,14 @@ html:not(.playvideo) .sound-ctrl {
 }
 .indihold-product-section .product_description {
     margin-bottom: 0;
+}
+@media (max-width: 767px) {
+    .product_image_block {
+        height: 322px;
+    }
+}
+@media (max-width: 575px) {
+    .indihold-product-section .product_price {
+        font-size: 18px;
+    }
 }
