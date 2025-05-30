@@ -138,14 +138,14 @@
 }
 .banner_new_section .new_banner_content {
     min-height: 700px;
-    padding: 200px 0 150px;
+    padding: 200px 10px 150px;
     display: flex;
     flex-direction: column;
     z-index: 1;
     position: relative;
     text-align: center;
     justify-content: center;
-    max-width: 1111px;
+    max-width: 1135px;
     margin: auto;
 }
 .banner_new_section .new_banner_content .banner_heading {

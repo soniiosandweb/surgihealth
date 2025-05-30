@@ -15,6 +15,7 @@
     --breadcrumb-bg: #E7EEF2;
     --color-gray: #E9E9E9;
     --bs-border-radius: 8px;
+    --other-bg-color: #E1E8EC;
 }
 @font-face {
     font-family: "Montserrat";
@@ -43,6 +44,9 @@ body {
 .body-bg {
     background-color: #FFF6F6;
 }
+i[class^="fi-rr-"]:before {
+    vertical-align: middle;
+}
 a {
     text-decoration: unset;
     outline: unset;
@@ -63,7 +67,7 @@ a {
     padding-bottom: 80px;
 }
 .gradient_text {
-    background: -webkit-linear-gradient(90deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
+    background: -webkit-linear-gradient(0deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
