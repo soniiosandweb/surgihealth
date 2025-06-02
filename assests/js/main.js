@@ -294,4 +294,11 @@ jQuery(document).ready(function($){
         }
     });
 
+    // Payment method change checkout
+    $('input[type=radio][name=payment]').change(function() {
+        console.log(this.value)
+        $('.payment_form_item').removeClass('active');
+        $(this).parents('.payment_form_item').addClass('active');
+    });
+
 });

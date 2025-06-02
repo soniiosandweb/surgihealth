@@ -47,6 +47,10 @@ body {
 i[class^="fi-rr-"]:before {
     vertical-align: middle;
 }
+.form-check-input:checked {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+}
 a {
     text-decoration: unset;
     outline: unset;

@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - SurgiHealth</title>
+    <title>Address - SurgiHealth</title>
 
     <link rel="icon" href="assests/images/logo.png" />
-
-    <!-- Phone Number -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
 
     <!-- Bootstrap -->
     <link href="assests/css/bootstrap.min.css" rel="stylesheet">
@@ -25,8 +22,6 @@
     <link href="assests/css/style1.css" rel="stylesheet" />
     <link href="assests/css/products.css" rel="stylesheet" />
     <link href="assests/css/pages.css" rel="stylesheet" />
-
-    
 </head>
 <body>
 
@@ -120,10 +115,10 @@
                         
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/surgi-health/index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Checkout</li>
+                            <li class="breadcrumb-item active">Account</li>
                         </ul>
                         
-                        <p class="page_title">Checkout</p>
+                        <p class="page_title">Account</p>
 
                         <img class="breadcrums_img img-fluid" src="assests/images/side-view-woman.png" alt="Woman" />
                     </div>
@@ -132,162 +127,83 @@
         </div>
     </section>
 
-    <!-- Checkout section -->
-    <section class="checkout_section section-padding section-bottom-padding section-top-padding">
+    <!-- Address section -->
+    <section class="my-account-section section-padding section-bottom-padding section-top-padding">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
-                    <form class="checkout_form" method="post">
-                        <div class="shipping_address">
-                            <h2 class="heading2 text-left">Checkout</h2>
-                            <h3 class="heading3">Shipping Information</h3>
-                            <div class="form-row">
-                                <input type="text" class="form-control" placeholder="First Name" name="firstname" required />
-                            </div>
-                            <div class="form-row">
-                                <input type="text" class="form-control" placeholder="Last Name" name="lastname" required />
-                            </div>
-                            <div class="form-row">
-                                <input type="text" class="form-control" placeholder="Contact No." name="contactno" id="contactno" required />
-                            </div>
-                            <div class="form-row">
-                                <input type="text" class="form-control" placeholder="Shipping Address" name="shipping_address" required />
-                            </div>
-                            <div class="form-row">
-                                <input type="text" class="form-control" placeholder="State" name="shipping_state" required />
-                            </div>
-                            <div class="form-row">
-                                <input type="text" class="form-control" placeholder="Zip Code" name="shipping_zipcode" required />
-                            </div>
-                            <div class="form-row">
-                                <input type="text" class="form-control" placeholder="Country" name="shipping_country" required />
-                            </div>
-                            <div class="form-check form-row">
-                                <input class="form-check-input" type="checkbox" id="terms" name="terms" value="terms" required />
-                                <label for="terms" class="form-check-label">I have Read & Agree to the term & Conditions.</label>
-                            </div>
-                        </div>
-                        <div class="order_details_block">
-                            <div class="order_details_items">
-                                <h2 class="heading2 text-left">Check Your Cart</h2>
-                                <ul class="cart_product_list">
-                                    <li class="cart_product_item">
-                                        <a href="/surgi-health/product-detail.html" class="d-block">
-                                            <img class="cart_product_img img-fluid" src="assests/images/cleaning-brush.png" alt="product" />
-                                        </a>
-                                        
-                                        <div class="cart_product_content">
-                                            <div class="cart_product_title_block">
-                                                <a href="/surgi-health/product-detail.html" class="d-block"><p>Channel Cleaning Brushes</p></a>
-                                                <button type="button" class="cart_remove">
-                                                    <i class="fi-rr-trash"></i>
-                                                </button>
-                                            </div>
-                                            <div class="cart_product_price_quantity">
-                                                <div class="product_quantity">
-                                                    <span class="btn-minus"><i class="fi-rr-minus-small"></i></span>
-                                                    <input type="number" value="1" name="quantity" class="product_qty" />
-                                                    <span class="btn-plus"><i class="fi-rr-plus-small"></i></span>
-                                                </div>
-                                                <p class="product_price gradient_text">$ 34.00</p>
-                                            </div>
-                                        </div>
+                    <div class="my_account_block">
+                        <ul class="nav nav-pills my_account_links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/surgi-health/my-orders.html">My Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/surgi-health/my-account.html">Account Information </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/surgi-health/addresses.html">Address Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Saved Cards</a>
+                            </li>
+                        </ul>
+
+                        <div class="account_dashboard_content">
+                            
+                            <form class="login_signup_form" method="post" id="account_information_form">
+
+                                <h3 class="heading_account">Account Information</h3>
+
+                                <ul class="my_addresses_lists">
+                                    <li class="my_address_list_item">
+                                        <p class="address_account_name">
+                                            <span>Anna Schneider</span>
+                                            <span class="remove_addr"><i class="fi-rr-trash"></i></span>
+                                        </p>
+                                        <p class="my_address">+49 1523 4567890</p>
+                                        <p class="my_address">Berliner Straße 123</p>
+                                        <p class="my_address">Berlin, 10115, Germany</p>
                                     </li>
-                                    <li class="cart_product_item">
-                                        <a href="/surgi-health/product-detail.html" class="d-block">
-                                            <img class="cart_product_img img-fluid" src="assests/images/cleaning-brush.png" alt="product" />
-                                        </a>
-                                        
-                                        <div class="cart_product_content">
-                                            <div class="cart_product_title_block">
-                                                <a href="/surgi-health/product-detail.html" class="d-block"><p>Channel Cleaning Brushes</p></a>
-                                                <button type="button" class="cart_remove">
-                                                    <i class="fi-rr-trash"></i>
-                                                </button>
-                                            </div>
-                                            <div class="cart_product_price_quantity">
-                                                <div class="product_quantity">
-                                                    <span class="btn-minus"><i class="fi-rr-minus-small"></i></span>
-                                                    <input type="number" value="1" name="quantity" class="product_qty" />
-                                                    <span class="btn-plus"><i class="fi-rr-plus-small"></i></span>
-                                                </div>
-                                                <p class="product_price gradient_text">$ 34.00</p>
-                                            </div>
-                                        </div>
+                                    <li class="my_address_list_item">
+                                        <p class="address_account_name">
+                                            <span>Anna Schneider</span>
+                                            <span class="remove_addr"><i class="fi-rr-trash"></i></span>
+                                        </p>
+                                        <p class="my_address">+49 1523 4567890</p>
+                                        <p class="my_address">Berliner Straße 123</p>
+                                        <p class="my_address">Berlin, 10115, Germany</p>
                                     </li>
                                 </ul>
 
-                                <ul class="cart_total mt-4">
-                                    <li class="cart_total_list">
-                                        <p class="cart_total_title">Items</p>
-                                        <p class="cart_total_text">2 Items</p>
-                                    </li>
-                                    <li class="cart_total_list">
-                                        <p class="cart_total_title">Subtotal</p>
-                                        <p class="cart_total_text">$ 68.00</p>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            
-                            <div class="divider"></div>
-
-                            <div class="order_details_items">
-                                <h2 class="heading2 text-left">Payment</h2>
-
-                                <div class="payment_form_item active">
-                                    <label for="credit_card" class="payment_form_title">
-                                        <input type="radio" name="payment" value="card" id="credit_card" class="form-check-input" checked />
-                                        Credit and Debit Card
-                                    </label>
-
-                                    <div class="checkout_payment_form">
-                                        <div class="form-row">
-                                            <input type="text" class="form-control" placeholder="Card Number" name="credit_card_number" required />
-                                        </div>
-
-                                        <div class="form-row-flex">
-                                            <div class="form-row">
-                                                <input type="text" class="form-control" placeholder="Expiry Date" name="card_expiry" required />
-                                            </div>
-                                            <div class="form-row">
-                                                <input type="password" class="form-control" placeholder="CVV" name="card_cvv" required />
-                                            </div>
-                                        </div>
-
-                                        <div class="form-check form-row">
-                                            <input class="form-check-input" type="checkbox" id="save_card" name="save_card" value="card" />
-                                            <label for="save_card" class="form-check-label">Save card</label>
-                                        </div>
-                                    </div>
-
+                                <div class="form-row">
+                                    <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
                                 </div>
 
-                                <div class="payment_form_item">
-                                    <label for="banking" class="payment_form_title">
-                                        <input type="radio" name="payment" value="banking" id="banking" class="form-check-input" />
-                                        Net Banking
-                                    </label>
-
-                                    <div class="checkout_payment_form">
-                                        <div class="form-row">
-                                            <select class="form-control form-select" name="net_banking">
-                                                <option value="">Choose Option</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
+                                <div class="form-row">
+                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
                                 </div>
 
-                                <div class="cart_btn_block">
-                                    <button type="submit" class="btn-checkout btn-gradient d-block text-center">Pay Now</button>
+                                <div class="form-row">
+                                    <input type="text" class="form-control" name="shipping_address" placeholder="Shipping Address" required>
                                 </div>
-                            </div>
 
-                            
+                                <div class="form-row">
+                                    <input type="text" class="form-control" name="shipping_state" placeholder="State" required>
+                                </div>
 
+                                <div class="form-row">
+                                    <input type="text" class="form-control" name="shipping_zipcode" placeholder="Zip Code" required>
+                                </div>
+
+                                <div class="form-row">
+                                    <input type="text" class="form-control" name="shipping_country" placeholder="Country">
+                                </div>
+
+                                <button type="submit" class="btn-form-submit btn-gradient">Add Address</button>
+
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -483,9 +399,6 @@
     <script src="assests/js/slick.min.js" type="text/javascript"></script>
     <!-- Bootstrap -->
     <script src="assests/js/bootstrap.bundle.min.js"></script>
-    <!-- Phone Input -->
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
-
     <!-- Main Js -->
     <script src="assests/js/main.js"></script>
 </body>
