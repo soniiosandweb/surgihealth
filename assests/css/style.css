@@ -475,6 +475,17 @@ a {
 .footer_copyright .footer_bottom .copyright_text a:hover {
     color: var(--primary-orange);
 }
+@media (max-width: 1281px) {
+    .main_footer .footer_menu .footer_menu_link,
+    .main_footer .footer_content,
+    .main_footer .footer_contact, 
+    .main_footer .footer_contact a {
+        font-size: 15px;
+    }
+    .main_footer .footer_heading {
+        font-size: 20px;
+    }
+}
 @media (max-width: 991px) {
     .main_footer .footer_top {
         padding: 50px 0px;

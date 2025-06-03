@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address - SurgiHealth</title>
+    <title>Product Search - SurgiHealth</title>
 
     <link rel="icon" href="assests/images/logo.png" />
 
@@ -94,7 +94,7 @@
     </header>
 
     <!-- Breadcrums -->
-    <section class="breadcrums_block breadcrumbs_banner_block section-padding">
+    <section class="breadcrums_block breadcrumbs_banner_block section-padding new_breadcrums_img">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
@@ -115,93 +115,209 @@
                         
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/surgi-health/index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Account</li>
+                            <li class="breadcrumb-item active">Product Search</li>
                         </ul>
                         
-                        <p class="page_title">Account</p>
-
-                        <img class="breadcrums_img img-fluid" src="assests/images/side-view-woman.png" alt="Woman" />
+                        <p class="page_title">Product Search</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Address section -->
-    <section class="my-account-section section-padding section-bottom-padding section-top-padding">
+    <!-- Product Search section -->
+    <section class="product_search_section section-padding section-top-padding section-bottom-padding">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
-                    <div class="my_account_block">
-                        <ul class="nav nav-pills my_account_links">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/surgi-health/my-orders.html">My Orders</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/surgi-health/my-account.html">Account Information </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/surgi-health/addresses.html">Address Book</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/surgi-health/saved-cards.html">Saved Cards</a>
-                            </li>
-                        </ul>
-
-                        <div class="account_dashboard_content">
-                            
-                            <form class="login_signup_form" method="post" id="account_information_form">
-
-                                <h3 class="heading_account">Account Information</h3>
-
-                                <ul class="my_addresses_lists">
-                                    <li class="my_address_list_item">
-                                        <p class="address_account_name">
-                                            <span>Anna Schneider</span>
-                                            <span class="remove_addr"><i class="fi-rr-trash"></i></span>
-                                        </p>
-                                        <p class="my_address">+49 1523 4567890</p>
-                                        <p class="my_address">Berliner Straße 123</p>
-                                        <p class="my_address">Berlin, 10115, Germany</p>
-                                    </li>
-                                    <li class="my_address_list_item">
-                                        <p class="address_account_name">
-                                            <span>Anna Schneider</span>
-                                            <span class="remove_addr"><i class="fi-rr-trash"></i></span>
-                                        </p>
-                                        <p class="my_address">+49 1523 4567890</p>
-                                        <p class="my_address">Berliner Straße 123</p>
-                                        <p class="my_address">Berlin, 10115, Germany</p>
-                                    </li>
-                                </ul>
-
-                                <div class="form-row">
-                                    <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                    <h3 class="main_heading">Search Result For <span class="gradient_text">Dental Instrument Cleaning</span></h3>
+                    <div class="product_search_flex">
+                        <div class="product_search_sidebar">
+                            <h3 class="product_search_heading gradient_text">Filter By Category</h3>
+                            <div class="product_search_checkboxes">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cleaning" name="category[]" value="Instrument Cleaning">
+                                    <label class="form-check-label">Instrument Cleaning</label>
                                 </div>
 
-                                <div class="form-row">
-                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="identification" name="category[]" value="Instrument Identification">
+                                    <label class="form-check-label">Instrument Identification</label>
                                 </div>
 
-                                <div class="form-row">
-                                    <input type="text" class="form-control" name="shipping_address" placeholder="Shipping Address" required>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="protection" name="category[]" value="Instrument Protection">
+                                    <label class="form-check-label">Instrument Protection</label>
                                 </div>
 
-                                <div class="form-row">
-                                    <input type="text" class="form-control" name="shipping_state" placeholder="State" required>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="accessories" name="category[]" value="Trays + Accessories">
+                                    <label class="form-check-label">Trays + Accessories</label>
                                 </div>
 
-                                <div class="form-row">
-                                    <input type="text" class="form-control" name="shipping_zipcode" placeholder="Zip Code" required>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="tags" name="category[]" value="Tags">
+                                    <label class="form-check-label">Tags</label>
                                 </div>
 
-                                <div class="form-row">
-                                    <input type="text" class="form-control" name="shipping_country" placeholder="Country">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="personal" name="category[]" value="Personal Protection">
+                                    <label class="form-check-label">Personal Protection</label>
                                 </div>
 
-                                <button type="submit" class="btn-form-submit btn-gradient">Add Address</button>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="endoscopy" name="category[]" value="Endoscopy">
+                                    <label class="form-check-label">Endoscopy</label>
+                                </div>
 
-                            </form>
+                            </div>
+                        </div>
+
+                        <div class="product_searches_lists">
+                            <h3 class="product_search_results">There are <span>123</span> Total Result</h3>
+
+                            <div class="product_search_lists">
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/cleaning-brush.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Channel Cleaning Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/channel-cleaning.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Rigid Channel Cleaning ...</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/plastic-handle-brushes-image.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Plastic Handle Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/handle-brush.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Plastic Handle Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/Acetabular-Reamer-Brush.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Acetabular Reamer Brush</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/cleaning-brush.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Channel Cleaning Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/cleaning-brush.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Channel Cleaning Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/SH-TSB-16-039.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Channel Cleaning Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/SH-TSB-12-079.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Channel Cleaning Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/SH-TSB-24-098.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Channel Cleaning Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/SH-TSB-12-118.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Channel Cleaning Brushes</h4>
+                                    </a>
+                                </div>
+
+                                <div class="product_search_list_item">
+                                    <a href="/surgi-health/product-detail.html">
+                                        <div class="product_search_img">
+                                            <img src="assests/images/SH-TSB-24-098-1.png" alt="Product" class="product_img img-fluid" />
+                                        </div>
+                                        <h4 class="product_search_item_title">Channel Cleaning Brushes</h4>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <ul class="pagination product_search_pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <span class="dots p-0">...</span>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">8</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link p-0" href="#"><i class="fi-rr-angle-small-right"></i></a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link p-0" href="#"><i class="fi-rr-angle-double-small-right"></i></a>
+                                </li>
+
+                                <li class="page-item">
+                                    <a class="page-link all_link" href="#">All</a>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>

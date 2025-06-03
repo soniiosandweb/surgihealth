@@ -7,6 +7,7 @@
     position: relative;
     background-image: url('../images/everis_medical_instruments.png');
     background-size: cover;
+    background-position: top center;
 }
 .breadcrumbs_banner_block::after {
     content: "";
@@ -203,6 +204,9 @@
     .ordering_block_contents {
         display: none;
     }
+    .ordering_block_header {
+        margin: auto;
+    }
     .ordering_block_columns_block {
         flex-direction: column;
         gap: 3rem;
@@ -218,6 +222,9 @@
     }
     .ordering_block_columns_block .ordering_contents_text.active {
         display: block;
+    }
+    .ordering_block_columns p {
+        font-size: 18px;
     }
 }
 @media (max-width: 575px) {
@@ -376,6 +383,7 @@
     outline: none;
     background: transparent;
     color: var(--color-blue);
+    line-height: 1;
 }
 
 .product_quantity input.product_qty::-webkit-outer-spin-button,
@@ -493,11 +501,12 @@
     padding: 0;
 }
 .cart_items_table .product_quantity span {
-    padding: 12px 10px;
+    padding: 12.36px 10px;
 }
 .cart_items_table .product_quantity .product_qty {
     border-left: 1px solid var(--color-blue);
     border-right: 1px solid var(--color-blue);
+    width: 40px;
 }
 .cart_items_table .cart_product_item .cart_product_content{
     gap: 0.5rem;
@@ -737,6 +746,17 @@ form.checkout_form {
     font-weight: 600;
     color: var(--color-blue);
     font-size: 18px;
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.payment_form_title input {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
 }
 .checkout_form .payment_form_item .form-row.form-check label {
     color: var(--color-blue);
@@ -746,8 +766,12 @@ form.checkout_form {
     gap: 1rem;
     justify-content: space-between;
 }
-.payment_form_item {
+.payment_form_item .checkout_payment_form {
     margin-bottom: 2rem;
+    display: none;
+}
+.payment_form_item.active .checkout_payment_form {
+    display: block;
 }
 .iti__selected-country-primary {
     padding: 12px 5px 12px 15px;
@@ -867,11 +891,12 @@ form.checkout_form {
         padding: 1.5rem;
     }
     .login_signup_heading {
-        font-size: 30px;
+        font-size: 25px;
     }
     .login_signup_form .btn-form-submit {
         margin: 10px 0;
         padding: 13px 30px;
+        font-size: 18px;
     }
     .login_signup_form .form-control {
         padding: 12px 10px 12px 0px;
@@ -890,16 +915,19 @@ form.checkout_form {
     border-color: var(--primary-orange);
 }
 .signup_form .form-row .form-control.password_field {
-    padding-right: 30px;
+    padding-right: 45px;
 }
 .signup_form .form-row .toggle-password {
     position: absolute;
-    right: 12px;
-    top: 20px;
+    right: 24px;
+    top: 16px;
     color: var(--color-bg);
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
     line-height: 1;
+}
+.signup_form .form-row .toggle-password::before {
+    vertical-align: middle;
 }
 .login_signup_form .form-row label {
     font-family: 'Poppins';
@@ -911,6 +939,10 @@ form.checkout_form {
 @media (max-width: 575px) {
     .login_signup_form .form-row .form-control {
         padding: 12px 20px;
+    }
+    .signup_form .form-row .toggle-password {
+        right: 16px;
+        top: 12px;
     }
 }
 
@@ -936,6 +968,8 @@ form.checkout_form {
     border-radius: 8px;
     display: flex;
     gap: 3rem;
+    max-width: 1228px;
+    margin-left: auto;
 }
 .my_account_links {
     flex-direction: column;
@@ -954,7 +988,7 @@ form.checkout_form {
 .my_account_links .nav-link.active,
 .my_account_links .nav-link:hover {
     background-color: var(--color-white);
-    color: var(--primary-orange);
+    color: var(--color-gradient1);
     font-weight: 600;
 }
 .account_dashboard_content {
@@ -1063,10 +1097,9 @@ form.checkout_form {
     margin-top: 20px;
 }
 .orders_btn_block .btn-gradient {
-    font-size: 14px;
     font-weight: 400;
     font-family: 'Poppins';
-    padding: 12.5px 16px;
+    padding: 11.5px 16px;
 }
 
 .orders_btn_block .btn-gradient.btn-exchange {
@@ -1156,6 +1189,9 @@ form.checkout_form {
         height: 228px;
         max-width: 228px;
     }
+    .orders_btn_block .btn-gradient {
+        padding: 11px 16px;
+    }
 }
 
 /* address lists */
@@ -1204,5 +1240,161 @@ form.checkout_form {
 @media (max-width: 575px) {
     .my_addresses_lists .my_address_list_item {
         background-color: var(--color-white);
+    }
+}
+
+/* Product Search */
+.new_breadcrums_img {
+    background-image: url('../images/breadcrums_img.jpg');
+    background-position: top center;
+}
+.product_search_flex {
+    margin-top: 4rem;
+    display: flex;
+    gap: 24px;
+    align-items: start;
+}
+.product_search_sidebar {
+    max-width: 315px;
+    flex: 1;
+    border-radius: 3px;
+    background-color: #FCFCFC;
+    padding: 20px;
+}
+.product_search_sidebar .product_search_heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    padding: 0 0 15px;
+    border-bottom: 4px solid var(--color-blue);
+}
+
+.product_search_checkboxes .form-check {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.product_search_checkboxes .form-check input {
+    border: 1px solid var(--color-blue);
+    margin: 0;
+}
+.product_searches_lists {
+    flex: 1;
+}
+.product_search_results {
+    color: #00000075;
+    font-size: 33px;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.product_search_lists {
+    display: grid;
+    gap: 30px 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product_search_list_item {
+    border: 1px solid #0000000F;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+.product_search_list_item a {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.product_search_item_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-blue);
+    margin: 0;
+}
+.product_search_list_item a:hover .product_search_item_title {
+    color: var(--primary-orange);
+}
+.product_search_list_item .product_search_img {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.product_search_list_item .product_search_img img {
+    width: max-content;
+    object-fit: contain;
+    transition: transform .2s;
+    max-height: 224px;
+}
+.product_search_list_item a:hover .product_search_img img {
+    transform: scale(1.2);
+}
+.pagination.product_search_pagination {
+    padding-top: 40px;
+    justify-content: end;
+}
+.product_search_pagination .page-item {
+    display: flex;
+}
+.product_search_pagination .page-link, 
+.product_search_pagination .dots {
+    border: none;
+    font-size: 33px;
+    color: var(--color-blue);
+    padding: 5px 8px;
+    line-height: 1;
+    text-transform: uppercase;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+.product_search_pagination .page-link.all_link {
+    background: -webkit-linear-gradient(0deg, #F4942E 0%, #EA6432 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 3rem;
+}
+@media (max-width: 1199px) {
+    .product_search_lists {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 991px) {
+    .product_search_flex {
+        flex-direction: column;
+    }
+    .product_search_sidebar {
+        max-width: 100%;
+        width: 100%;
+    }
+    .product_searches_lists {
+        width: 100%;
+    }
+    .product_search_list_item .product_search_img {
+        height: 280px;
+    }
+    .product_search_section .main_heading {
+        text-align: center;
+    }
+}
+@media (max-width: 575px) {
+    .product_search_lists {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .product_search_results {
+        font-size: 20px;
+    }
+    .pagination.product_search_pagination {
+        justify-content: center;
+    }
+    .product_search_pagination .page-link,
+    .product_search_pagination .dots {
+        font-size: 25px;
+    }
+    .product_search_pagination .page-link.all_link {
+        margin-left: 0;
     }
 }
