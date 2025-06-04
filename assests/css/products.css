@@ -305,9 +305,11 @@
     gap: 10px;
     font-size: 18px;
     border-radius: 8px;
-    padding: 10px 30px;
-    font-family: "Montserrat-Bold";
+    padding: 10.5px 30px;
+    font-family: "Montserrat";
     outline: none;
+    border: none;
+    font-weight: 700;
 }
 .product_cart_buy button i {
     line-height: 1;
@@ -406,7 +408,7 @@
     }
     .product_cart_buy button {
         font-size: 16px;
-        padding: 8px 18px;
+        padding: 10px 18px;
     }
     .product_variant .btn-variant-group .btn-radio-select {
         font-size: 16px;
