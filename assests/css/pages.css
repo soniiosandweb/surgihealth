@@ -1419,7 +1419,8 @@ form.checkout_form {
     margin-bottom: 5rem;
 }
 .search_lists_product_image {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     height: 500px;
     border: 1px solid #0000004D;
     display: flex;
@@ -1454,7 +1455,8 @@ form.checkout_form {
 }
 @media (max-width: 1024px) {
     .search_lists_product_image {
-        width: 353px;
+        max-width: 353px;
+        width: 100%;
         height: 353px;
     }
 }
