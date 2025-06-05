@@ -163,7 +163,7 @@ jQuery(document).ready(function($){
         });
 
         var zoom = $('.product-large-image').find('img').attr('src');
-        $('.product-large-image').append('<img class="zoom" src="'+zoom+'">');
+        $('.product-large-image').append('<img class="zoom" src="'+zoom+'" alt="Zoom">');
         $('.product-large-image').mouseenter(function(){
             $(this).mousemove(function(event){
                 var offset = $(this).offset();

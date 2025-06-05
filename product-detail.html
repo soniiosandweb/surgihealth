@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details - SurgiHealth</title>
-
+    <meta name="description" content="SurgiHealth Solutions - Sterile Processing Supplies">
     <link rel="icon" href="assests/images/logo.png" />
 
     <!-- Bootstrap -->
@@ -32,7 +32,7 @@
                 <a class="navbar-brand" href="/surgi-health/index.html">
                     <img src="assests/images/logo.png" alt="Logo" class="logo_main" />
                 </a>
-                <button class="navbar-toggler" type="button" id="mobiletoggle">
+                <button class="navbar-toggler" type="button" id="mobiletoggle" aria-label="toggle">
                     <i class="fi-rr-menu-burger"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="mainnavbar">
@@ -47,7 +47,7 @@
                             <a class="nav-link" href="/surgi-health/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">About</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
@@ -58,19 +58,19 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Resources </a>
+                            <a class="nav-link" href="#">Resources </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Education</a>
+                            <a class="nav-link" href="#">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Contact</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
 
                     <div class="d-flex header_right">
                         <form class="d-flex relative" method="post">
-                            <button type="submit" class="btn-submit">
+                            <button type="submit" class="btn-submit" aria-label="Search">
                                 <i class="fi-rr-search"></i>
                             </button>
                             <input class="form-control search_input" type="text" placeholder="Search" name="search_input">
@@ -102,7 +102,7 @@
 
                         <div class="d-flex header_right">
                             <form class="d-flex relative" method="post">
-                                <button type="submit" class="btn-submit">
+                                <button type="submit" class="btn-submit" aria-label="Search">
                                     <i class="fi-rr-search"></i>
                                 </button>
                                 <input class="form-control search_input" type="text" placeholder="Search" name="search_input">
@@ -146,24 +146,24 @@
                     <div class="product_detail_slider">
                         <div class="product_slider_selection">
                             <div class="product-thumbnail selected">
-                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" />
+                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" alt="thumbnail" />
                             </div>
                             <div class="product-thumbnail">
-                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" />
+                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" alt="thumbnail" />
                             </div>
                             <div class="product-thumbnail">
-                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" />
+                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" alt="thumbnail" />
                             </div>
                             <div class="product-thumbnail">
-                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" />
+                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" alt="thumbnail" />
                             </div>
                             <div class="product-thumbnail">
-                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" />
+                                <img src="assests/images/cleaning-brush-large.png" class="img-fluid thumbnail" alt="thumbnail" />
                             </div>
                         </div>
 
                         <div class="product-large-image">
-                            <img src="assests/images/cleaning-brush-large.png" class="img-fluid product-display-img" />
+                            <img src="assests/images/cleaning-brush-large.png" class="img-fluid product-display-img" alt="Product Image" />
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
 
                         <!-- Product Description -->
                         <div class="product_description">
-                            <h6 class="product_description_head">Description</h6>
+                            <p class="product_description_head">Description</p>
                             <p class="description_content color-gray">Have a question about our products? We're here to help. Contact us today to speak directly to a SurgiHealth's team member or shop our catalog now to request a inquiry.</p>
                         </div>
                     </div>
@@ -240,15 +240,15 @@
                             <h3 class="main_heading">Our Top Products</h3>
                         </div>
                         <div class="categories_right_tab latest_news_arrows">
-                            <button class="related_back_arrow"><i class="fi-rr-arrow-left"></i></button>
-                            <button class="related_next_arrow"><i class="fi-rr-arrow-right"></i></button>
+                            <button class="related_back_arrow" aria-label="Back"><i class="fi-rr-arrow-left"></i></button>
+                            <button class="related_next_arrow" aria-label="Next"><i class="fi-rr-arrow-right"></i></button>
                         </div>
                     </div>
 
                     <div class="related_products_slider">
                         <div class="related_product_item">
                             <div class="product_block">
-                                <a href="/surgi-health/product-detail.html"><h5 class="product_title">Channel Cleaning Brushes</h5></a>
+                                <a href="/surgi-health/product-detail.html"><h4 class="product_title">Channel Cleaning Brushes</h4></a>
                                 <p class="product_text">Packing - 2/PK & 50/PK</p>
                                 <a href="/surgi-health/product-detail.html" class="product_img_link">
                                     <img src="assests/images/cleaning-brush.png" alt="Product" class="product_img img-fluid" />
@@ -269,7 +269,7 @@
 
                         <div class="related_product_item">
                             <div class="product_block">
-                                <a href="/surgi-health/product-detail.html"><h5 class="product_title">Rigid Channel Cleaning ...</h5></a>
+                                <a href="/surgi-health/product-detail.html"><h4 class="product_title">Rigid Channel Cleaning ...</h4></a>
                                 <p class="product_text">Packing - 2/PK & 50/PK</p>
                                 <a href="/surgi-health/product-detail.html" class="product_img_link">
                                     <img src="assests/images/channel-cleaning.png" alt="Product" class="product_img img-fluid" />
@@ -290,7 +290,7 @@
 
                         <div class="related_product_item">
                             <div class="product_block">
-                                <a href="/surgi-health/product-detail.html"><h5 class="product_title">Plastic Handle Brushes</h5></a>
+                                <a href="/surgi-health/product-detail.html"><h4 class="product_title">Plastic Handle Brushes</h4></a>
                                 <p class="product_text">Packing - 2/PK & 50/PK</p>
                                 <a href="/surgi-health/product-detail.html" class="product_img_link">
                                     <img src="assests/images/plastic-handle-brush.png" alt="Product" class="product_img img-fluid" />
@@ -311,7 +311,7 @@
 
                         <div class="related_product_item">
                             <div class="product_block">
-                                <a href="/surgi-health/product-detail.html"><h5 class="product_title">Plastic Handle Brushes</h5></a>
+                                <a href="/surgi-health/product-detail.html"><h4 class="product_title">Plastic Handle Brushes</h4></a>
                                 <p class="product_text">Packing - 2/PK & 50/PK</p>
                                 <a href="/surgi-health/product-detail.html" class="product_img_link">
                                     <img src="assests/images/handle-brush.png" alt="Product" class="product_img img-fluid" />
@@ -332,7 +332,7 @@
 
                         <div class="related_product_item">
                             <div class="product_block">
-                                <a href="/surgi-health/product-detail.html"><h5 class="product_title">Rigid Channel Cleaning ...</h5></a>
+                                <a href="/surgi-health/product-detail.html"><h4 class="product_title">Rigid Channel Cleaning ...</h4></a>
                                 <p class="product_text">Packing - 2/PK & 50/PK</p>
                                 <a href="/surgi-health/product-detail.html" class="product_img_link">
                                     <img src="assests/images/channel-cleaning.png" alt="Product" class="product_img img-fluid" />

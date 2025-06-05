@@ -1415,13 +1415,13 @@ form.checkout_form {
 /* Search Result page */
 .search_lists_product_flex {
     display: flex;
-    gap: 30px;
+    gap: 2.5rem;
     margin-bottom: 5rem;
 }
 .search_lists_product_image {
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
-    height: 500px;
+    height: 450px;
     border: 1px solid #0000004D;
     display: flex;
     align-items: center;
@@ -1439,6 +1439,7 @@ form.checkout_form {
 }
 .product_small_desc {
     margin-top: 30px;
+    font-size: 16px;
 }
 .product_small_desc p {
     font-size: 16px;
@@ -1453,6 +1454,14 @@ form.checkout_form {
 .search_lists_section .load_more_btn {
     min-width: 198px;
 }
+.search_list_product_details .product_details_content .product_subtitle,
+.search_list_product_details .product_details_content .product_price {
+    font-size: 18px;
+}
+.search_list_product_details .product_details_content .product_title {
+    font-size: 24px;
+}
+
 @media (max-width: 1024px) {
     .search_lists_product_image {
         max-width: 353px;
