@@ -1447,11 +1447,11 @@ form.checkout_form {
     font-weight: 500;
     margin: 0;
 }
-.search_lists_section .load_more_btn:hover {
+.center_btn_block .load_more_btn:hover {
     background: var(--primary-blue);
     color: var(--color-white);
 }
-.search_lists_section .load_more_btn {
+.center_btn_block .load_more_btn {
     min-width: 198px;
 }
 .search_list_product_details .product_details_content .product_subtitle,
@@ -1534,9 +1534,9 @@ form.checkout_form {
     margin-bottom: 20px;
 }
 .about_us_contents .about_us_text {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Montserrat';
-    color: var(--color-black);
+    color: var(--color-blue);
     margin: 0;
 }
 @media (max-width: 1199px) {
@@ -1758,7 +1758,7 @@ form.checkout_form {
     margin: 0;
     font-family: 'Poppins';
     font-size: 55px;
-    color: var(--primary-blue);
+    color: var(--color-blue);
     font-weight: 700;
 }
 .about_boxes_heading {
@@ -1768,10 +1768,11 @@ form.checkout_form {
     margin: 0;
 }
 .about_boxes_content {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Poppins';
     margin-bottom: 10px;
     max-width: 299px;
+    color: var(--color-blue);
 }
 @media (max-width: 1199px) {
     .about_boxes_grid {
@@ -1884,5 +1885,46 @@ form.checkout_form {
     }
     .btn-newsletter-submit {
         padding: 5.5px 10px;
+    }
+    .newsletter_form .form-control {
+        font-size: 15px;
+    }
+}
+
+
+/* Events Page */
+.events_lists_sections .main_heading {
+    font-size: 40px;
+    font-weight: 500;
+}
+.events_lists_grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 1rem;
+}
+.latest_news_block.events_grid_item {
+    background-color: var(--color-lightwhite);
+}
+.latest_news_block.events_grid_item .news_link_img.bg-black {
+    background-color: var(--color-black);
+}
+@media (max-width: 1024px) {
+    .events_lists_grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 699px) {
+    .events_lists_grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 575px) {
+    .events_grid_item .news_img {
+        min-height: 178px;
+        max-height: 178px;
+    }
+    .events_lists_sections .main_heading {
+        font-size: 25px;
     }
 }

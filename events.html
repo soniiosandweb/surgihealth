@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - SurgiHealth</title>
+    <meta name="description" content="SurgiHealth Solutions - Sterile Processing Supplies">
+    <link rel="icon" href="assests/images/logo.png" />
+
+    <!-- Bootstrap -->
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css' rel='stylesheet'>
+
+    <!-- Slick Carousel -->
+    <link href="assests/css/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="assests/css/slick-theme.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Style -->
+    <link href="assests/css/style.css" rel="stylesheet" />
+    <link href="assests/css/style1.css" rel="stylesheet" />
+    <link href="assests/css/products.css" rel="stylesheet" />
+    <link href="assests/css/pages.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header_main">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="/surgi-health/index.html">
+                    <img src="assests/images/logo.png" alt="Logo" class="logo_main" />
+                </a>
+                <button class="navbar-toggler" type="button" id="mobiletoggle" aria-label="toggle">
+                    <i class="fi-rr-menu-burger"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainnavbar">
+                    <div class="mobile_toggle">
+                        <button class="navbar-toggler" type="button" id="mobiletoggle_close">
+                            <i class="fi-rr-cross"></i>
+                        </button>
+                    </div>
+                    
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/surgi-health/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/surgi-health/about-us.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/surgi-health/product-listing.html">Instrument Cleaning</a></li>
+                                <li><a class="dropdown-item" href="/surgi-health/product-listing.html">Instrument Identification</a></li>
+                                <li><a class="dropdown-item" href="/surgi-health/product-listing.html">Instrument Protection</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex header_right">
+                        <form class="d-flex relative" method="post">
+                            <button type="submit" class="btn-submit" aria-label="Search">
+                                <i class="fi-rr-search"></i>
+                            </button>
+                            <input class="form-control search_input" type="text" placeholder="Search" name="search_input">
+                        </form>
+                        <button type="button" class="btn-header-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fi-rr-shopping-cart"></i>
+                            <span class="cart_amount">4</span>
+                        </button>
+                        <a href="/surgi-health/login.html" class="d-inline">
+                            <button type="button" class="btn-login">
+                                <i class="fi fi-rr-user"></i> 
+                                <span>Login</span>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrums -->
+    <section class="breadcrums_block breadcrumbs_banner_block section-padding">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcrums_content">
+
+                        <div class="d-flex header_right">
+                            <form class="d-flex relative" method="post">
+                                <button type="submit" class="btn-submit" aria-label="Search">
+                                    <i class="fi-rr-search"></i>
+                                </button>
+                                <input class="form-control search_input" type="text" placeholder="Search" name="search_input">
+                            </form>
+                            <button type="button" class="btn-header-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                <img src="assests/images/shopping-cart.png" alt="cart" class="img-fluid" />
+                                <span class="cart_amount">4</span>
+                            </button>
+                        </div>
+
+                        
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/surgi-health/index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Events</li>
+                        </ul>
+                        
+                        <p class="page_title">Events</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events section -->
+    <div class="events_lists_sections section-padding section-bottom-padding section-top-padding">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col">
+                    <div class="categories_top">
+                        <div class="categories_left">
+                            <h2 class="main_heading">Our <span class="gradient_text">Categories</span></h2>
+                        </div>
+                        <div class="categories_right_tab">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#all_events">ALL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#community">Community</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#education">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="pill" href="#event">Event</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#press">Press</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#product">Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#tech_view">Tech View</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-content events_lists">
+                        <!-- All Event tab -->
+                        <div class="tab-pane fade show" id="all_events">
+                            <div class="events_lists_grid">
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                            </div>
+
+                            <div class="center_btn_block pt-4">
+                                <button class="btn-gradient load_more_btn">Load More</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Community tab -->
+                        <div class="tab-pane fade show" id="community">
+                            <div class="events_lists_grid">
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                            </div>
+
+                            <div class="center_btn_block pt-4">
+                                <button class="btn-gradient load_more_btn">Load More</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Education tab -->
+                        <div class="tab-pane fade show" id="education">
+                            <div class="events_lists_grid">
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                            </div>
+
+                            <div class="center_btn_block pt-4">
+                                <button class="btn-gradient load_more_btn">Load More</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Event tab -->
+                        <div class="tab-pane fade show active" id="event">
+                            <div class="events_lists_grid">
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                            </div>
+
+                            <div class="center_btn_block pt-4">
+                                <button class="btn-gradient load_more_btn">Load More</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Press tab -->
+                        <div class="tab-pane fade show" id="press">
+                            <div class="events_lists_grid">
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                            </div>
+
+                            <div class="center_btn_block pt-4">
+                                <button class="btn-gradient load_more_btn">Load More</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Product tab -->
+                        <div class="tab-pane fade show" id="product">
+                            <div class="events_lists_grid">
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                            </div>
+
+                            <div class="center_btn_block pt-4">
+                                <button class="btn-gradient load_more_btn">Load More</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Tech View tab -->
+                        <div class="tab-pane fade show" id="tech_view">
+                            <div class="events_lists_grid">
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img bg-black">
+                                        <img src="assests/images/events/10-years-blog.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Feb 19th, 2024</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating 10 Years of SurgiHealth Solutions</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/climb-awards.jpg" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 27th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">SurgiHealth Solutions Honored with 2023 CLIMB Award for Innovator</h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                                <div class="latest_news_block events_grid_item">
+                                    <a href="#" class="news_link_img">
+                                        <img src="assests/images/events/lets-celebrate.png" alt="Events" class="news_img img-fluid" />
+                                    </a>
+                                    <p class="news_date">Oct 4th, 2023</p>
+                                    <a href="#">
+                                        <h3 class="news_title">Celebrating Central Services Week 2023: Honoring Our Unsung Heroes </h3>
+                                    </a>
+                                    <a href="#" class="news_read_more">Read More</a>
+                                </div>
+
+                            </div>
+
+                            <div class="center_btn_block pt-4">
+                                <button class="btn-gradient load_more_btn">Load More</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="main_footer">
+        <div class="container-xxl">
+            <div class="row footer_top">
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer_col">
+                        <a href="/surgi-health/index.html" class="footer_logo">
+                            <img src="assests/images/logo-footer.png" alt="Logo" class="logo_main img-fluid" />
+                        </a>
+                        <p class="footer_content">
+                            Lorem Ipsum is simply dummy  text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer_col">
+                        <h4 class="footer_heading">Company</h4>
+                        <ul class="footer_menu">
+                            <li><a href="#" class="footer_menu_link">News</a></li>
+                            <li><a href="/surgi-health/ordering.html" class="footer_menu_link">How To Order</a></li>
+                            <li><a href="/surgi-health/login.html" class="footer_menu_link">Account</a></li>
+                            <li><a href="#" class="footer_menu_link">Distributors</a></li>
+                        </ul>
+
+                        <h4 class="footer_heading mt-5">Downloads</h4>
+                        <ul class="footer_menu">
+                            <li><a href="#" class="footer_menu_link">Reference Sheets</a></li>
+                            <li><a href="#" class="footer_menu_link">Product IFUs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer_col">
+                        <h4 class="footer_heading">Products</h4>
+                        <ul class="footer_menu">
+                            <li><a href="/surgi-health/product-listing.html" class="footer_menu_link">Instrument Cleaning</a></li>
+                            <li><a href="/surgi-health/product-listing.html" class="footer_menu_link">Instrument Identification</a></li>
+                            <li><a href="/surgi-health/product-listing.html" class="footer_menu_link">Instrument Protection</a></li>
+                            <li><a href="/surgi-health/product-listing.html" class="footer_menu_link">Trays + Accessories</a></li>
+                            <li><a href="/surgi-health/product-listing.html" class="footer_menu_link">Tags</a></li>
+                            <li><a href="/surgi-health/product-listing.html" class="footer_menu_link">Personal Protection</a></li>
+                            <li><a href="/surgi-health/product-listing.html" class="footer_menu_link">Endoscopy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer_col">
+                        <h4 class="footer_heading">Contact</h4>
+                        <p class="footer_contact">SurgiHealth Solutions <br/>2122 Schappelle Ln <br/>Cincinnati, OH 45240</p>
+                        <p class="footer_contact">
+                            <a href="tel:8448878744">844.88.SURGI (78744)</a>
+                        </p>
+                        <p class="footer_contact">
+                            <a href="mailto:info@surgihealth.com">info@surgihealth.com</a>
+                        </p>
+
+                        <ul class="footer_social">
+                            <li>
+                                <a href="#">
+                                    <img src="assests/images/facebook.png" alt="facebook" class="social_icons" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assests/images/twitter.png" alt="twitter" class="social_icons" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assests/images/linkedin.png" alt="linkedin" class="social_icons" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assests/images/instagram.png" alt="instagram" class="social_icons" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_border"></div>
+        <div class="container-xxl footer_copyright">
+            <div class="row footer_bottom">
+                <div class="col-md-6">
+                    <p class="copyright_text">&copy; <a href="https://surgihealth.com/" target="_blank">SurgiHealth Solutions, Inc.</a> All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer_bottom_links">
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div class="modal cartModal" id="cartModal">
+        <div class="modal-dialog">
+            <div class="modal-content cart_modal_content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Cart</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fi-rr-cross"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                   <ul class="cart_product_list">
+                        <li class="cart_product_item">
+                            <a href="/surgi-health/product-detail.html" class="d-block">
+                                <img class="cart_product_img img-fluid" src="assests/images/cleaning-brush.png" alt="product" />
+                            </a>
+                            
+                            <div class="cart_product_content">
+                                <div class="cart_product_title_block">
+                                    <a href="/surgi-health/product-detail.html" class="d-block"><p>Channel Cleaning Brushes</p></a>
+                                    <button type="button" class="cart_remove">
+                                        <i class="fi-rr-trash"></i>
+                                    </button>
+                                </div>
+                                <div class="cart_product_price_quantity">
+                                    <div class="product_quantity">
+                                        <span class="btn-minus"><i class="fi-rr-minus-small"></i></span>
+                                        <input type="number" value="1" name="quantity" class="product_qty" />
+                                        <span class="btn-plus"><i class="fi-rr-plus-small"></i></span>
+                                    </div>
+                                    <p class="product_price gradient_text">$ 34.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cart_product_item">
+                            <a href="/surgi-health/product-detail.html" class="d-block">
+                                <img class="cart_product_img img-fluid" src="assests/images/cleaning-brush.png" alt="product" />
+                            </a>
+                            
+                            <div class="cart_product_content">
+                                <div class="cart_product_title_block">
+                                    <a href="/surgi-health/product-detail.html" class="d-block"><p>Channel Cleaning Brushes</p></a>
+                                    <button type="button" class="cart_remove">
+                                        <i class="fi-rr-trash"></i>
+                                    </button>
+                                </div>
+                                <div class="cart_product_price_quantity">
+                                    <div class="product_quantity">
+                                        <span class="btn-minus"><i class="fi-rr-minus-small"></i></span>
+                                        <input type="number" value="1" name="quantity" class="product_qty" />
+                                        <span class="btn-plus"><i class="fi-rr-plus-small"></i></span>
+                                    </div>
+                                    <p class="product_price gradient_text">$ 34.00</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="modal-footer">
+                    <ul class="cart_total">
+                        <li class="cart_total_list">
+                            <p class="cart_total_title">Items</p>
+                            <p class="cart_total_text">2 Items</p>
+                        </li>
+                        <li class="cart_total_list">
+                            <p class="cart_total_title">Subtotal</p>
+                            <p class="cart_total_text">$ 68.00</p>
+                        </li>
+                    </ul>
+                    <a href="/surgi-health/checkout.html" class="btn-checkout btn-gradient d-block">Checkout</a>
+                    <a href="/surgi-health/cart.html" class="btn_view_cart btn-text-only d-block">View Cart</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Jquery -->
+    <script src="assests/js/jquery.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="assests/js/slick.min.js" type="text/javascript"></script>
+    <!-- Bootstrap -->
+    <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <!-- Main Js -->
+    <script src="assests/js/main.js"></script>
+</body>
+</html>
