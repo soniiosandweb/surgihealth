@@ -866,7 +866,7 @@ a {
     margin-bottom: 50px;
 }
 .subheading {
-    background: -webkit-linear-gradient(90deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
+    background: -webkit-linear-gradient(0deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 24px;
@@ -980,7 +980,7 @@ a {
 .product_block .product_price .price {
     font-size: 20px;
     margin: 0;
-    background: -webkit-linear-gradient(90deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
+    background: -webkit-linear-gradient(0deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;

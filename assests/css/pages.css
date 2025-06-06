@@ -1732,7 +1732,84 @@ form.checkout_form {
         bottom: 90px;
     }
 }
-
+/* About page boxes section */
+.about_boxes_grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.about_boxes_cols {
+    border: 1px solid #00000021;
+    background-color: #FCFCFC;
+    border-radius: 3px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about_boxes_cols .about_boxes_icons {
+    width: 86px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.about_boxes_number {
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 55px;
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+.about_boxes_heading {
+    font-size: 33px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin: 0;
+}
+.about_boxes_content {
+    font-size: 18px;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+    max-width: 299px;
+}
+@media (max-width: 1199px) {
+    .about_boxes_grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 767px) {
+    .about_boxes_grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about_boxes_cols {
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+        width: 100%;
+    }
+    .about_boxes_cols .about_boxes_icons {
+        margin: auto auto 10px;
+    }
+    .about_boxes_content {
+        margin: auto;
+    }
+}
+@media (max-width: 575px) {
+    .about_boxes_cols .about_boxes_icons {
+        width: 54px;
+        height: 54px;
+    }
+    .about_boxes_number {
+        font-size: 30px;
+    }
+    .about_boxes_heading {
+        font-size: 25px;
+    }
+    .about_boxes_cols {
+        padding: 1.5rem 1rem;
+    }
+}
 /* About page newsletter */
 .newsletter_block {
     background-color: var(--primary-blue);
@@ -1740,8 +1817,6 @@ form.checkout_form {
     border-radius: 15px;
     padding: 40px 40px 70px;
     text-align: center;
-    max-width: 1310px;
-    margin-left: auto;
     position: relative;
 }
 .newsletter_block:after {
@@ -1789,10 +1864,12 @@ form.checkout_form {
     font-weight: 600;
     padding: 5.5px 27.62px;
     outline: unset;
+    border-color: #F4942E;
 }
 .btn-newsletter-submit:hover {
     background-color: var(--color-white);
     color: #F4942E;
+    border-color: var(--color-white);
 }
 @media (max-width: 575px) {
     .newsletter_block {
