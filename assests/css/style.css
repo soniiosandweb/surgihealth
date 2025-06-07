@@ -40,6 +40,7 @@
 body {
     font-family: "Montserrat";
     position: relative;
+    line-height: 1.2;
 }
 .body-bg {
     background-color: #FFF6F6;
@@ -404,7 +405,7 @@ a {
     color: var(--primary-orange);
 }
 .main_footer .footer_content {
-    margin-top: 50px;
+    margin-top: 30px;
     max-width: 295px;
 }
 .main_footer .footer_contact,

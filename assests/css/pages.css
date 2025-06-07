@@ -1928,3 +1928,125 @@ form.checkout_form {
         font-size: 25px;
     }
 }
+
+/* Event Details */
+.breadcrumbs_banner_block .breadcrums_content .page_title.max-width {
+    max-width: 600px;
+}
+.breadcrumbs_banner_block .breadcrums_content .breadcrumb.max-width {
+    max-width: 600px;
+}
+.event_details_flex {
+    display: flex;
+    gap: 2rem;
+}
+.event_details_sidebar {
+    width: 427px;
+}
+.social_media_share {
+    margin-bottom: 1.5rem;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    list-style: none;
+}
+.social_media_share li img {
+    width: 32px;
+}
+.social_media_share li .share_icon {
+    margin-right: 25px;
+}
+.sidebar_top_heading {
+    font-size: 24px;
+    color: var(--color-blue);
+    font-weight: 500;
+}
+.event_details_details_col {
+    flex: 1;
+    width: 100%;
+}
+.event_details_details_col {
+    flex: 1;
+    width: 100%;
+}
+.event_details_details_col .news_date {
+    color: var(--color-bg);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+.event_details_title {
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--color-blue);
+}
+.event_text {
+    font-size: 16px;
+    color: var(--color-blue);
+    margin-bottom: 2.5rem;
+}
+.event_text_heading {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-blue);
+    margin-bottom: 10px;
+}
+.event_featured_image {
+    margin: 20px 0;
+}
+.event_categories {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.event_categories li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-bg);
+}
+.events_sidebar_boxes {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+@media (max-width: 1199px) {
+    .event_details_sidebar {
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+    .event_details_sidebar {
+        width: 100%;
+        flex: 1;
+    }
+    .event_details_flex {
+        flex-direction: column;
+    }
+    .events_sidebar_boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .social_media_share {
+        justify-content: start;
+    }
+}
+@media (max-width: 767px) {
+    .event_details_title {
+        font-size: 25px;
+    }
+    .event_text {
+        margin-bottom: 1.5rem;
+    }
+    .event_text_heading {
+        font-size: 20px;
+    }
+}
+@media (max-width: 699px) {
+    .events_sidebar_boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
