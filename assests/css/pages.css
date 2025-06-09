@@ -2056,3 +2056,23 @@ form.checkout_form {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* News Details Page */
+.news_description_image {
+    margin-bottom: 40px;
+}
+.news_text_heading {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+@media (max-width: 575px) {
+    .news_description_image {
+        margin-bottom: 30px;
+    }
+    .news_text_heading {
+        margin-bottom: 20px;
+    }
+    .event_categories {
+        margin: 0;
+    }
+}
