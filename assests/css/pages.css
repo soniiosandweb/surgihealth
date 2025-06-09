@@ -1894,7 +1894,7 @@ form.checkout_form {
 
 /* Events Page */
 .events_lists_sections .main_heading {
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 500;
 }
 .events_lists_grid {
@@ -1975,10 +1975,11 @@ form.checkout_form {
     text-transform: uppercase;
     font-weight: 500;
     margin: 0;
+    font-size: 14px;
 }
 .event_details_title {
     margin: 10px 0;
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 500;
     color: var(--color-blue);
 }
@@ -2032,6 +2033,11 @@ form.checkout_form {
     }
     .social_media_share {
         justify-content: start;
+    }
+    .breadcrumbs_banner_block .breadcrums_content .page_title.max-width,
+    .breadcrumbs_banner_block .breadcrums_content .breadcrumb.max-width {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (max-width: 767px) {

@@ -20,6 +20,7 @@
     font-size: 30px;
     font-weight: 500;
     margin: 0;
+    line-height: 1.2;
 }
 .breadcrum-bg .breadcrums_content .header_right .search_input,
 .breadcrum-bg .breadcrums_content .header_right .btn-header-cart {
