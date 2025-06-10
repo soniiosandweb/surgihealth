@@ -2081,10 +2081,6 @@ form.checkout_form {
 }
 
 /* Resources page */
-.resources_section .main_heading {
-    font-weight: 500;
-    font-size: 40px;
-}
 .sub_paragraph {
     font-size: 16px;
     font-family: 'Poppins';
@@ -2146,10 +2142,12 @@ form.checkout_form {
     }
 }
 @media (max-width: 575px) {
-    .resources_section .main_heading {
-        font-size: 25px;
-    }
     .resource_pdf_title {
         font-size: 18px;
     }
+}
+
+/* Contact Page */
+.breadcrumbs_banner_block.bg_bottom_center {
+    background-position: bottom center;
 }
