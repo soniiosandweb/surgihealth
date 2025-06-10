@@ -1980,7 +1980,7 @@ form.checkout_form {
 .event_details_title {
     margin: 10px 0;
     font-size: 33px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-blue);
 }
 .event_text {
@@ -1990,7 +1990,7 @@ form.checkout_form {
 }
 .event_text_heading {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-blue);
     margin-bottom: 10px;
 }
@@ -2074,5 +2074,82 @@ form.checkout_form {
     }
     .event_categories {
         margin: 0;
+    }
+    .news_text_heading {
+        font-size: 22px;
+    }
+}
+
+/* Resources page */
+.resources_section .main_heading {
+    font-weight: 500;
+    font-size: 40px;
+}
+.sub_paragraph {
+    font-size: 16px;
+    font-family: 'Poppins';
+    color: var(--color-blue);
+    margin: 10px 0 0;
+}
+.resources_grid_list {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.resources_grid_item .resource_pdf_link {
+    color: var(--color-blue);
+    border: 1px solid #00000033;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+    height: 100%;
+}
+.resource_pdf_title {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.resources_grid_item .resource_pdf_link:hover {
+    color: var(--primary-orange);
+}
+
+@media (max-width: 1199px) {
+    .resources_section .categories_top {
+        flex-direction: row;
+        text-align: left;
+    }
+    .resources_section .categories_top .nav.nav-pills {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 991px) {
+    .resources_section .categories_top {
+        flex-direction: column;
+        text-align: left;
+    }
+    .resources_section .categories_top .nav.nav-pills {
+        justify-content: start;
+    }
+    .resources_section .categories_top .categories_left,
+    .resources_section .categories_top .categories_right_tab {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .resources_grid_list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    .resources_section .main_heading {
+        font-size: 25px;
+    }
+    .resource_pdf_title {
+        font-size: 18px;
     }
 }
