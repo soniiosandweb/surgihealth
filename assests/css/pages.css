@@ -2151,3 +2151,170 @@ form.checkout_form {
 .breadcrumbs_banner_block.bg_bottom_center {
     background-position: bottom center;
 }
+.contact_form_block {
+    background-color: #FCFCFC;
+    max-width: 986px;
+    margin: -100px auto 0;
+    border: 1px solid var(--color-blue);
+    padding: 60px;
+    position: relative;
+    border-radius: 3px;
+}
+.contact_form_block .form-row-flex {
+    display: flex;
+    gap: 16px;
+}
+.contact_form_block .form-row {
+    padding: 8px 0;
+    width: 100%;
+}
+.contact_form_block .form-row .form-control {
+    border: 1px solid var(--color-blue);
+    padding: 12px 30px;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: unset;
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--color-black);
+}
+.contact_form_block .form-row .form-control:focus {
+    border-color: var(--primary-orange);
+}
+.contact_form_block .form-row .form-control::placeholder {
+    color: #0006;
+}
+.contact_form_block .btn-contact-submit:hover {
+    background-color: var(--primary-blue);
+    color: var(--color-white);
+}
+.contact_form_block .btn-contact-submit {
+    margin-top: 30px;
+}
+@media (max-width: 767px) {
+    .contact_form_block .form-row .form-control {
+        font-size: 16px;
+    }
+}
+@media (max-width: 575px) {
+    .contact_form_block {
+        padding: 30px;
+        margin: -80px auto auto;
+    }
+    .contact_form_block .form-row-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Contact help section */
+.contact_main_heading {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background: -webkit-linear-gradient(0deg, #F4942E 0%, var(--color-gradient1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact_main_heading span {
+    font-weight: 700;
+    -webkit-text-fill-color: var(--color-blue);
+}
+.contact_ready_help {
+    background-color: var(--primary-blue);
+    color: var(--color-white);
+    padding: 35px;
+    border-radius: 3px;
+    margin-top: 80px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.contact_ready_help .contact_help_col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 250px;
+}
+.contact_help_col .contact_help_content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contact_help_col .contact_help_content .contact-icons {
+    width: 30px;
+}
+.contact_help_content .contact_help_heading {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.contact_help_col .contact_help_text {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    padding-left: 45px;
+}
+.contact_help_col .contact_help_text a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+.contact_help_col .contact_help_text a:hover {
+    color: var(--primary-orange);
+}
+.contact_help_social {
+    padding-left: 45px;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    gap: 10px;
+}
+.contact_help_social li .social_icons {
+    filter: brightness(0) invert(1);
+}
+.contact_help_social li a:hover .social_icons {
+    filter: unset;
+}
+@media (max-width: 1199px) {
+    .contact_ready_help {
+        column-gap: 20px;
+    }
+}
+@media (max-width: 991px) {
+    .contact_ready_help {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .contact_ready_help {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px;
+        margin-top: 50px;
+    }
+    .contact_ready_help .contact_help_col {
+        margin: auto;
+    }
+    .contact_help_col .contact_help_text {
+        padding: 0;
+        text-align: center;
+    }
+    .contact_help_col .contact_help_content {
+        justify-content: center;
+    }
+    .contact_help_social {
+        padding: 0;
+        justify-content: center;
+    }
+    .contact_main_heading {
+        font-size: 33px;
+        text-align: center;
+    }
+}
+@media (max-width: 575px) {
+    .contact_main_heading {
+        font-size: 25px;
+    }
+    .contact_help_col .contact_help_content .contact-icons {
+        width: 20px;
+    }
+}
