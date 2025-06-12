@@ -134,7 +134,7 @@
     width: 80px;
     height: 80px;
     border-radius: 100%;
-    background-color: #F4942E;
+    background-color: var(--color-gradient3);
     color: var(--color-white);
     z-index: 3;
     cursor: pointer;
@@ -192,7 +192,7 @@ html:not(.playvideo) .sound-ctrl {
     bottom: 12px;
     cursor: pointer;
     color: #fff;
-    background-color: #F4942E;
+    background-color: var(--color-gradient3);
     font-size: 11px;
     width: 24px;
     height: 24px;

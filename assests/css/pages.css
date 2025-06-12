@@ -1361,7 +1361,7 @@ form.checkout_form {
     box-shadow: unset;
 }
 .product_search_pagination .page-link.all_link {
-    background: -webkit-linear-gradient(0deg, #F4942E 0%, #EA6432 100%);
+    background: -webkit-linear-gradient(0deg, var(--color-gradient3) 0%, var(--color-gradient1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 1rem;
@@ -1630,7 +1630,7 @@ form.checkout_form {
     position: absolute;
     inset: 0;
     padding: 35px;
-    background: linear-gradient(var(--color-gradient1),#F4942E);
+    background: linear-gradient(var(--color-gradient1),var(--color-gradient3));
     border-radius: inherit;
     mask: conic-gradient(#000 0 0) content-box exclude,conic-gradient(#000 0 0);
     left: -120px;
@@ -1646,7 +1646,7 @@ form.checkout_form {
     position: absolute;
     inset: 0;
     padding: 23px;
-    background: linear-gradient(var(--color-gradient1),#F4942E);
+    background: linear-gradient(var(--color-gradient1),var(--color-gradient3));
     border-radius: inherit;
     mask: conic-gradient(#000 0 0) content-box exclude,conic-gradient(#000 0 0);
     left: auto;
@@ -1860,16 +1860,16 @@ form.checkout_form {
 }
 .btn-newsletter-submit {
     border-radius: 5px;
-    background-color: #F4942E;
+    background-color: var(--color-gradient3);
     font-family: 'Poppins';
     font-weight: 600;
     padding: 5.5px 27.62px;
     outline: unset;
-    border-color: #F4942E;
+    border-color: var(--color-gradient3);
 }
 .btn-newsletter-submit:hover {
     background-color: var(--color-white);
-    color: #F4942E;
+    color: var(--color-gradient3);
     border-color: var(--color-white);
 }
 @media (max-width: 575px) {
@@ -2181,8 +2181,12 @@ form.checkout_form {
 .contact_form_block .form-row .form-control:focus {
     border-color: var(--primary-orange);
 }
-.contact_form_block .form-row .form-control::placeholder {
+.contact_form_block .form-row .form-control::placeholder,
+.contact_form_block .form-row select:invalid {
     color: #0006;
+}
+.contact_form_block .form-row select option {
+    color: var(--color-black);
 }
 .contact_form_block .btn-contact-submit:hover {
     background-color: var(--primary-blue);
@@ -2212,7 +2216,7 @@ form.checkout_form {
     font-size: 50px;
     font-weight: 400;
     text-transform: capitalize;
-    background: -webkit-linear-gradient(0deg, #F4942E 0%, var(--color-gradient1) 100%);
+    background: -webkit-linear-gradient(0deg, var(--color-gradient3) 0%, var(--color-gradient1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2280,7 +2284,7 @@ form.checkout_form {
         column-gap: 20px;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 1099px) {
     .contact_ready_help {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2316,5 +2320,145 @@ form.checkout_form {
     }
     .contact_help_col .contact_help_content .contact-icons {
         width: 20px;
+    }
+}
+
+/* Privacy Policy */
+.breadcrums_block.bg_primary_color {
+    background: linear-gradient(90deg, var(--gradient-blue1) 0%, var(--gradient-blue2) 100%);
+}
+.breadcrums_block.bg_primary_color::after {
+    display: none;
+}
+.privacy_policy_text {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin: 20px 0;
+    color: var(--color-blue);
+    line-height: 1.6;
+    font-weight: 500;
+}
+.privacy_policy_text a {
+    color: var(--color-blue);
+    text-decoration: underline;
+    font-weight: 600;
+}
+.content_flex_block {
+    margin-top: 60px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.content_flex_block .content_flex_box {
+    background-color: #FCFCFC;
+    border: 1px solid #EA64327A;
+    padding: 30px;
+}
+.content_flex_block .content_flex_box.full-width {
+    grid-column: 1 / 3;
+}
+.content_flex_block .content_flex_box .main_heading {
+    background: -webkit-linear-gradient(0deg, var(--color-gradient3) 0%, var(--color-gradient1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+}
+.content_flex_block .content_flex_box .content_flex_text {
+    margin: 15px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-blue);
+    line-height: 1.2;
+}
+.content_flex_block .content_flex_box ul {
+    padding: 0;
+    list-style-position: inside;
+    margin: 30px 0 0;
+}
+.content_flex_block .content_flex_box ul li b {
+    font-weight: 600;
+    line-height: 1.5;
+}
+.contact_privacy_box {
+    background-color: var(--primary-blue);
+    color: var(--color-white);
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 35px;
+    border-radius: 3px;
+    gap: 40px;
+}
+.contact_privacy_col {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: max-content;
+}
+.contact_privacy_col.location_col {
+    align-items: start;
+}
+.contact_privacy_text {
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 300px;
+    margin: 0;
+}
+.contact_privacy_col.heading_col .contact_privacy_text {
+    font-weight: 600;
+}
+.contact_privacy_text a {
+    color: var(--color-white);
+}
+.contact_privacy_text a:hover {
+    color: var(--primary-orange);
+}
+.contact_privacy_col .contact-icons {
+    width: 20px;
+}
+@media (max-width: 1199px) {
+    .contact_privacy_box {
+        column-gap: 20px;
+    }
+}
+@media (max-width: 1099px) {
+    .contact_privacy_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 991px) {
+    .content_flex_block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content_flex_block .content_flex_box.full-width {
+        grid-column: 1;
+    }
+}
+@media (max-width: 767px) {
+    .contact_privacy_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .privacy_policy_section .main_heading,
+    .privacy_policy_text {
+        text-align: center;
+    }
+    .contact_privacy_col {
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact_privacy_col.location_col {
+        align-items: center;
+    }
+    .contact_privacy_col .contact-icons {
+        width: 30px;
+        margin-top: 0;
+    }
+}
+@media (max-width: 575px) {
+    .content_flex_block .content_flex_box {
+        padding: 20px 15px;
     }
 }
