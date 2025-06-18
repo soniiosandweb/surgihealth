@@ -161,7 +161,7 @@
 }
 .ordering_block_columns_block .ordering_contents_text::after {
     content: "";
-    background-image: url('https://iosandweb.com/surgi-health/assests/images/upload.png');
+    background-image: url('https://iosandweb.com/sh/assests/images/upload.png');
     width: 12px;
     height: 12px;
     position: absolute;
